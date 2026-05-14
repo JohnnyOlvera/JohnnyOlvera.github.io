@@ -1,24 +1,27 @@
 <!DOCTYPE HTML>
 <!--
-  Johnny Olvera Director
+  Johnny Olvera | Writer / Director
 -->
 <html>
   <style>
-/* The Log Principle section */
+/* Custom filmmaker branding sections */
+.storytelling-philosophy,
 .log-principle,
-.storytelling-philosophy {
+.currently-developing {
   max-width: 900px;
   margin: 0 auto;
 }
 
+.storytelling-philosophy .major,
 .log-principle .major,
-.storytelling-philosophy .major {
+.currently-developing .major {
   margin-bottom: 2rem;
   text-align: left;
 }
 
+.storytelling-philosophy .eyebrow,
 .log-principle .eyebrow,
-.storytelling-philosophy .eyebrow {
+.currently-developing .eyebrow {
   display: inline-block;
   margin-bottom: 0.75rem;
   font-size: 0.8rem;
@@ -27,15 +30,17 @@
   opacity: 0.75;
 }
 
+.storytelling-philosophy h2,
 .log-principle h2,
-.storytelling-philosophy h2 {
+.currently-developing h2 {
   margin-bottom: 0.35rem;
   font-size: 2.4rem;
   line-height: 1.1;
 }
 
+.storytelling-philosophy .byline,
 .log-principle .byline,
-.storytelling-philosophy .byline {
+.currently-developing .byline {
   margin: 0;
   font-size: 1rem;
   letter-spacing: 0.12em;
@@ -43,34 +48,78 @@
   opacity: 0.7;
 }
 
+.storytelling-philosophy .statement-body,
 .log-principle .statement-body,
-.storytelling-philosophy .statement-body {
+.currently-developing .statement-body {
   font-size: 1.05rem;
   line-height: 1.9;
 }
 
+.storytelling-philosophy .lead,
 .log-principle .lead,
-.storytelling-philosophy .lead {
+.currently-developing .lead {
   font-size: 1.35rem;
   font-weight: 500;
 }
 
+.storytelling-philosophy .principles,
 .log-principle .principles,
-.storytelling-philosophy .principles {
+.currently-developing .principles {
   margin: 2rem 0;
   padding: 1.5rem;
   border-left: 3px solid rgba(255,255,255,0.25);
 }
 
+.storytelling-philosophy .signature,
 .log-principle .signature,
-.storytelling-philosophy .signature {
+.currently-developing .signature {
   margin-top: 2rem;
   font-size: 1.15rem;
+}
+
+.hero-statement {
+  margin: 1.5rem auto 2rem auto;
+  max-width: 760px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.manifesto-line {
+  margin: 1.5rem auto;
+  max-width: 760px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 2rem 0 0 0;
+}
+
+.project-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.project-list strong {
+  letter-spacing: 0.08em;
+}
+
+.trailer-note {
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 </style>
   <head>
     <title>Johnny Olvera | Writer / Director</title>
-    <meta name="description" content="Johnny Olvera is a writer/director creating emotionally layered, audience-accessible cinema that entertains on the surface and rewards deeper audiences with meaning, reflection, and discovery. Directed THE WARREN, now streaming on Tubi." />
+    <meta name="description" content="Johnny Olvera is a writer/director creating emotionally layered, audience-accessible cinema that entertains on the surface and rewards deeper audiences with meaning, tension, reflection, and discovery. Directed THE WARREN, now streaming on Tubi." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -84,9 +133,13 @@
       <div id="intro">
         <h1>Johnny Olvera<br />Writer / Director</h1>
 
-        <p>
-          I create emotionally layered, audience-accessible stories that entertain first —
-          and reward deeper audiences with meaning, reflection, and discovery.
+        <p class="hero-statement">
+          Writer/director crafting audience-accessible stories with cinematic tension,
+          emotional depth, humor, and layered human themes.
+        </p>
+
+        <p class="manifesto-line">
+          “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
         </p>
 
         <p>
@@ -116,10 +169,9 @@
       <nav id="nav">
         <ul class="links">
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#feature">Feature</a></li>
-          <li><a href="#reel">Reel</a></li>
-          <li><a href="#work">Selected Work</a></li>
           <li><a href="#trailers">Spec Trailers</a></li>
+          <li><a href="#developing">Developing</a></li>
+          <li><a href="#work">Selected Work</a></li>
           <li><a href="#philosophy">Philosophy</a></li>
           <li><a href="#statement">Statement</a></li>
           <li><a href="#footer">Contact</a></li>
@@ -136,11 +188,122 @@
       <!-- Main -->
       <div id="main">
 
+        <!-- Spec Trailers -->
+        <section id="trailers" class="posts">
+
+          <article>
+            <header>
+              <span class="date">Psychological Thriller</span>
+              <h2>ICE MAIDEN</h2>
+            </header>
+            <a href="https://youtu.be/RBFohZAoOpU" class="image fit" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/RBFohZAoOpU/maxresdefault.jpg" alt="ICE MAIDEN proof-of-concept trailer" />
+            </a>
+            <p>
+              A proof-of-concept trailer for a psychological thriller about a brilliant detective drawn into a dangerous connection with a ritualistic killer.
+            </p>
+            <ul class="actions special">
+              <li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">Romantic Comedy</span>
+              <h2>HE SEES HER</h2>
+            </header>
+            <a href="https://youtu.be/qE-mvcEAWrc" class="image fit" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/qE-mvcEAWrc/maxresdefault.jpg" alt="HE SEES HER proof-of-concept trailer" />
+            </a>
+            <p>
+              A character-driven romantic comedy about a fearless relationship podcaster whose public experiment unravels when she meets someone who refuses to play by her rules.
+            </p>
+            <ul class="actions special">
+              <li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">World War II Action / Espionage</span>
+              <h2>MOB SQUAD</h2>
+            </header>
+            <a href="https://youtu.be/Oj3GnDQc4yM" class="image fit" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/Oj3GnDQc4yM/maxresdefault.jpg" alt="MOB SQUAD proof-of-concept trailer" />
+            </a>
+            <p>
+              A WWII action ensemble about imprisoned mobsters recruited for a covert mission against Hitler’s war machine — only to discover a mission worth becoming heroes for.
+            </p>
+            <ul class="actions special">
+              <li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">Animated Fantasy Adventure</span>
+              <h2>VERONICA</h2>
+            </header>
+            <a href="https://youtu.be/E2drTQ__NbU" class="image fit" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/E2drTQ__NbU/maxresdefault.jpg" alt="VERONICA proof-of-concept trailer" />
+            </a>
+            <p>
+              An animated family fantasy adventure rooted in folklore, wonder, humor, emotional courage, and the power of bringing light back to a darkened kingdom.
+            </p>
+            <ul class="actions special">
+              <li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">Hardcore Action Animation</span>
+              <h2>PAGANS</h2>
+            </header>
+            <a href="https://youtu.be/cXHl0L0x_MY" class="image fit" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/cXHl0L0x_MY/maxresdefault.jpg" alt="PAGANS proof-of-concept trailer" />
+            </a>
+            <p>
+              A visceral animated action concept with mythic stakes, brutal momentum, and a hard-edged visual identity built for high-impact serialized storytelling.
+            </p>
+            <ul class="actions special">
+              <li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+            </ul>
+          </article>
+
+        </section>
+
+        <!-- Currently Developing -->
+        <section id="developing" class="post currently-developing">
+          <header class="major">
+            <span class="eyebrow">Currently Developing</span>
+            <h2>Commercial Stories With Emotional Depth</h2>
+            <p class="byline">Film • Television • Animation • Emerging Formats</p>
+          </header>
+
+          <div class="statement-body">
+            <p class="lead">
+              My current slate moves across genre, but the creative engine stays the same: accessible entertainment with deeper emotional layers underneath.
+            </p>
+
+            <ul class="project-list">
+              <li><strong>ICE MAIDEN</strong> — Psychological thriller about obsession, identity, and the darkness hidden beneath emotional restraint.</li>
+              <li><strong>HE SEES HER</strong> — Romantic comedy about love, performance, vulnerability, and what happens when someone refuses to become content.</li>
+              <li><strong>MOB SQUAD</strong> — WWII action / espionage ensemble about criminals forced into heroism behind enemy lines.</li>
+              <li><strong>VERONICA</strong> — Animated fantasy adventure rooted in folklore, humor, courage, and emotional restoration.</li>
+              <li><strong>PAGANS</strong> — Hardcore action animation built around mythic conflict, visceral stakes, and serialized momentum.</li>
+            </ul>
+          </div>
+        </section>
+
         <!-- Selected Work -->
         <section id="work" class="posts">
 
           <article id="feature">
-            <header><h2>THE WARREN</h2></header>
+            <header>
+              <span class="date">Completed Feature</span>
+              <h2>THE WARREN</h2>
+            </header>
             <a href="https://tubitv.com/movies/100047968/the-warren" class="image fit" target="_blank" rel="noopener">
               <img src="images/warren-poster.jpg" alt="THE WARREN feature film" />
             </a>
@@ -155,13 +318,15 @@
           </article>
 
           <article id="reel">
-            <header><h2>Director Reel</h2></header>
+            <header>
+              <span class="date">Filmmaker Reel</span>
+              <h2>Director Reel</h2>
+            </header>
             <a href="https://youtu.be/t8nIq_HnDp4" class="image fit" target="_blank" rel="noopener">
               <img src="images/Reel.jpg" alt="Director Reel" />
             </a>
             <p>
-              Selected moments across narrative and commercial work — focused on performance, tone,
-              and visual intent.
+              Selected moments across narrative and commercial work — focused on performance, tone, visual intent, and cinematic execution.
             </p>
             <ul class="actions special">
               <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Reel</a></li>
@@ -169,12 +334,15 @@
           </article>
 
           <article>
-            <header><h2>Commercial Specs</h2></header>
+            <header>
+              <span class="date">Short-Form Commercial Storytelling</span>
+              <h2>Commercial Specs</h2>
+            </header>
             <a href="https://youtu.be/P0kkne1MlRQ" class="image fit" target="_blank" rel="noopener">
               <img src="images/commercial.jpg" alt="Commercial work" />
             </a>
             <p>
-              A fan-made spec commercial showcasing platform-native, short-form ad storytelling in a 15-second social-first format.
+              Fan-made spec commercials showcasing platform-native, short-form ad storytelling in a social-first format.
             </p>
             <ul class="actions special">
               <li><a href="https://youtu.be/P0kkne1MlRQ" class="button primary" target="_blank" rel="noopener">Pepsi</a></li>
@@ -183,98 +351,16 @@
           </article>
 
           <article>
-            <header><h2>Music Video</h2></header>
+            <header>
+              <span class="date">Stylized Performance Piece</span>
+              <h2>Music Video</h2>
+            </header>
             <a href="https://www.youtube.com/watch?v=dH8GyN3LyGw" class="image fit" target="_blank" rel="noopener">
               <img src="images/musicvideo.jpg" alt="Music video" />
             </a>
             <p>Stylized, performance-forward storytelling with a strong visual identity and rhythm.</p>
             <ul class="actions special">
               <li><a href="https://www.youtube.com/watch?v=dH8GyN3LyGw" class="button primary" target="_blank" rel="noopener">Watch Video</a></li>
-            </ul>
-          </article>
-
-        </section>
-
-        <!-- Spec Trailers -->
-        <section id="trailers" class="posts">
-
-          <article>
-            <header>
-              <span class="date">Animated Fantasy Adventure</span>
-              <h2>VERONICA</h2>
-            </header>
-            <a href="https://youtu.be/E2drTQ__NbU" class="image fit" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/E2drTQ__NbU/maxresdefault.jpg" alt="VERONICA spec script trailer" />
-            </a>
-            <p>
-              A cinematic proof-of-tone trailer for an animated family fantasy adventure rooted in folklore, wonder, humor, and emotional courage.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <span class="date">World War II Action / Espionage</span>
-              <h2>MOB SQUAD</h2>
-            </header>
-            <a href="https://youtu.be/Oj3GnDQc4yM" class="image fit" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/Oj3GnDQc4yM/maxresdefault.jpg" alt="MOB SQUAD spec script trailer" />
-            </a>
-            <p>
-              A proof-of-concept trailer for a WWII action ensemble about imprisoned mobsters recruited for a covert mission against Hitler's war machine.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <span class="date">Romantic Comedy</span>
-              <h2>HE SEES HER</h2>
-            </header>
-            <a href="https://youtu.be/qE-mvcEAWrc" class="image fit" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/qE-mvcEAWrc/maxresdefault.jpg" alt="HE SEES HER spec script trailer" />
-            </a>
-            <p>
-              A character-driven romantic comedy about a fearless relationship podcaster whose public experiment begins to unravel when she meets someone who refuses to play by her rules.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <span class="date">Psychological Thriller</span>
-              <h2>ICE MAIDEN</h2>
-            </header>
-            <a href="https://youtu.be/RBFohZAoOpU" class="image fit" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/RBFohZAoOpU/maxresdefault.jpg" alt="ICE MAIDEN spec script trailer" />
-            </a>
-            <p>
-              A psychological thriller proof-of-tone trailer about a brilliant detective drawn into a dangerous connection with a ritualistic killer.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <span class="date">Hardcore Action Animation</span>
-              <h2>PAGANS</h2>
-            </header>
-            <a href="https://youtu.be/cXHl0L0x_MY" class="image fit" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/cXHl0L0x_MY/maxresdefault.jpg" alt="PAGANS spec series trailer" />
-            </a>
-            <p>
-              A visceral animated action concept with a hard-edged visual identity, mythic stakes, and brutal momentum.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
             </ul>
           </article>
 
@@ -324,67 +410,67 @@
           </div>
         </section>
 
-       <!-- Statement -->
-<section id="statement" class="post log-principle">
-  <header class="major">
-    <span class="eyebrow">Director’s Statement</span>
-    <h2>The Log Principle™</h2>
-    <p class="byline">Johnny Olvera</p>
-  </header>
+        <!-- Director's Statement -->
+        <section id="statement" class="post log-principle">
+          <header class="major">
+            <span class="eyebrow">Director’s Statement</span>
+            <h2>The Log Principle™</h2>
+            <p class="byline">Johnny Olvera</p>
+          </header>
 
-  <div class="statement-body">
-    <p class="lead">
-      I direct from a simple belief: people are more capable than we give them credit for.
-    </p>
+          <div class="statement-body">
+            <p class="lead">
+              I direct from a simple belief: people are more capable than we give them credit for.
+            </p>
 
-    <p>
-      I call it <strong>The Log Principle™</strong>.
-    </p>
+            <p>
+              I call it <strong>The Log Principle™</strong>.
+            </p>
 
-    <p>
-      If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand.
-      And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.
-    </p>
+            <p>
+              If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand.
+              And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.
+            </p>
 
-    <p>
-      Because the moment you over-direct, over-explain, or over-control — you rob people of the opportunity to bring something real to the work.
-      I assume competence.
-    </p>
+            <p>
+              Because the moment you over-direct, over-explain, or over-control — you rob people of the opportunity to bring something real to the work.
+              I assume competence.
+            </p>
 
-    <p>
-      That doesn’t mean I’m absent. It means I’m intentional. I’m always watching, always engaged — but I step in only when it matters:
-      when there’s a real risk, a true gap, or an opportunity to elevate the moment in a meaningful way.
-    </p>
+            <p>
+              That doesn’t mean I’m absent. It means I’m intentional. I’m always watching, always engaged — but I step in only when it matters:
+              when there’s a real risk, a true gap, or an opportunity to elevate the moment in a meaningful way.
+            </p>
 
-    <div class="principles">
-      <p class="principles-intro">What that creates is a set where:</p>
-      <ul>
-        <li>Actors feel trusted, not managed</li>
-        <li>Collaborators take ownership</li>
-        <li>Performances become discoveries instead of instructions</li>
-      </ul>
-    </div>
+            <div class="principles">
+              <p class="principles-intro">What that creates is a set where:</p>
+              <ul>
+                <li>Actors feel trusted, not managed</li>
+                <li>Collaborators take ownership</li>
+                <li>Performances become discoveries instead of instructions</li>
+              </ul>
+            </div>
 
-    <p>
-      I’m not interested in perfect control. I’m interested in authentic moments that can only happen when people are given space to meet the material on their own terms.
-    </p>
+            <p>
+              I’m not interested in perfect control. I’m interested in authentic moments that can only happen when people are given space to meet the material on their own terms.
+            </p>
 
-    <p>
-      The best work doesn’t come from being told exactly what to do.
-      It comes from being trusted to do it.
-    </p>
+            <p>
+              The best work doesn’t come from being told exactly what to do.
+              It comes from being trusted to do it.
+            </p>
 
-    <p class="closing">
-      That’s the environment I create.
-    </p>
+            <p class="closing">
+              That’s the environment I create.
+            </p>
 
-    <p class="signature">
-      <strong>Cross your own log — and bring something only you could have found.</strong>
-    </p>
-  </div>
-</section>
+            <p class="signature">
+              <strong>Cross your own log — and bring something only you could have found.</strong>
+            </p>
+          </div>
+        </section>
 
-</div><!-- end #main -->
+      </div><!-- end #main -->
 
       <!-- Footer -->
       <footer id="footer">
