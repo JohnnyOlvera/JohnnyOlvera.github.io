@@ -1,20 +1,24 @@
 <!DOCTYPE HTML>
-<!--
-  Johnny Olvera | Writer / Director / Actor
--->
 <html>
   <style>
-/* Custom filmmaker branding sections */
 .storytelling-philosophy,
 .log-principle,
-.currently-developing {
+.currently-developing,
+.about-johnny,
+.recognition-strip,
+.goldwood-crosslink,
+.acting-section {
   max-width: 900px;
   margin: 0 auto;
 }
 
 .storytelling-philosophy .major,
 .log-principle .major,
-.currently-developing .major {
+.currently-developing .major,
+.about-johnny .major,
+.recognition-strip .major,
+.goldwood-crosslink .major,
+.acting-section .major {
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -22,6 +26,10 @@
 .storytelling-philosophy .eyebrow,
 .log-principle .eyebrow,
 .currently-developing .eyebrow,
+.about-johnny .eyebrow,
+.recognition-strip .eyebrow,
+.goldwood-crosslink .eyebrow,
+.acting-section .eyebrow,
 #intro .eyebrow {
   display: inline-block;
   margin-bottom: 0.75rem;
@@ -33,49 +41,32 @@
 
 .storytelling-philosophy h2,
 .log-principle h2,
-.currently-developing h2 {
+.currently-developing h2,
+.about-johnny h2,
+.recognition-strip h2,
+.goldwood-crosslink h2,
+.acting-section h2 {
   margin-bottom: 0.35rem;
   font-size: 2.4rem;
   line-height: 1.1;
 }
 
-.storytelling-philosophy .byline,
-.log-principle .byline,
-.currently-developing .byline {
-  margin: 0;
-  font-size: 1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
-.storytelling-philosophy .statement-body,
-.log-principle .statement-body,
-.currently-developing .statement-body {
+.statement-body {
   font-size: 1.05rem;
   line-height: 1.9;
 }
 
-.storytelling-philosophy .lead,
-.log-principle .lead,
-.currently-developing .lead {
+.lead {
   font-size: 1.35rem;
   font-weight: 500;
 }
 
-.storytelling-philosophy .principles,
-.log-principle .principles,
-.currently-developing .principles {
+.principles,
+.recognition-box,
+.goldwood-box {
   margin: 2rem 0;
   padding: 1.5rem;
   border-left: 3px solid rgba(255,255,255,0.25);
-}
-
-.storytelling-philosophy .signature,
-.log-principle .signature,
-.currently-developing .signature {
-  margin-top: 2rem;
-  font-size: 1.15rem;
 }
 
 .hero-statement {
@@ -109,19 +100,11 @@
 .project-list strong {
   letter-spacing: 0.08em;
 }
-
-.trailer-note {
-  margin-top: -0.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 1rem;
-  opacity: 0.85;
-}
 </style>
 
   <head>
     <title>Johnny Olvera | Writer • Director • Actor</title>
-    <meta name="description" content="Johnny Olvera is a produced writer, director, and actor creating emotionally layered, audience-accessible cinema that entertains on the surface and rewards deeper audiences with meaning, tension, reflection, and discovery. Directed THE WARREN, now streaming on Tubi." />
+    <meta name="description" content="Johnny Olvera is a produced writer, director, and actor creating emotionally layered, audience-accessible cinema. Directed THE WARREN, now streaming on Tubi." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -131,10 +114,8 @@
   <body class="is-preload">
     <div id="wrapper" class="fade-in">
 
-      <!-- Intro -->
       <div id="intro">
         <p class="eyebrow">Produced Filmmaker</p>
-
         <h1>Johnny Olvera<br />Writer • Director • Actor</h1>
 
         <p class="hero-statement">
@@ -145,41 +126,27 @@
           “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
         </p>
 
-        <p>
-          Directed <strong>THE WARREN</strong> — now streaming on Tubi.
-        </p>
+        <p>Directed <strong>THE WARREN</strong> — now streaming on Tubi.</p>
 
         <ul class="actions">
-          <li>
-            <a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">
-              Watch Director Reel
-            </a>
-          </li>
-          <li>
-            <a href="https://goldwoodcinema.com" class="button" target="_blank" rel="noopener">
-              Visit Goldwood Cinema
-            </a>
-          </li>
-          <li>
-            <a href="https://tubitv.com/movies/100047968/the-warren" class="button" target="_blank" rel="noopener">
-              Watch THE WARREN
-            </a>
-          </li>
+          <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Director Reel</a></li>
+          <li><a href="https://goldwoodcinema.com" class="button" target="_blank" rel="noopener">Visit Goldwood Cinema</a></li>
+          <li><a href="https://tubitv.com/movies/100047968/the-warren" class="button" target="_blank" rel="noopener">Watch THE WARREN</a></li>
         </ul>
       </div>
 
-      <!-- Header -->
       <header id="header">
         <a href="#intro" class="logo">Johnny Olvera</a>
       </header>
 
-      <!-- Nav -->
       <nav id="nav">
         <ul class="links">
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#trailers">Spec Trailers</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#trailers">Proof-of-Concept Trailers</a></li>
           <li><a href="#developing">Developing</a></li>
           <li><a href="#work">Selected Work</a></li>
+          <li><a href="#acting">Acting</a></li>
           <li><a href="#philosophy">Philosophy</a></li>
           <li><a href="#statement">Statement</a></li>
           <li><a href="#footer">Contact</a></li>
@@ -194,95 +161,91 @@
         </ul>
       </nav>
 
-      <!-- Main -->
       <div id="main">
 
-        <!-- Spec Trailers -->
+        <section id="about" class="post about-johnny">
+          <header class="major">
+            <span class="eyebrow">About Johnny</span>
+            <h2>Filmmaker. Performer. Storyteller.</h2>
+          </header>
+
+          <div class="statement-body">
+            <p class="lead">
+              Johnny Olvera is a produced writer, director, and actor whose work explores the emotional pressure points hidden beneath genre storytelling.
+            </p>
+
+            <p>
+              With decades of experience across performance, filmmaking, and narrative development, Johnny creates stories built for broad entertainment while leaving room for deeper emotional discovery. His work blends tension, humor, humanity, and cinematic momentum with a strong belief that audiences should feel invited in — not talked down to.
+            </p>
+
+            <p>
+              His feature film <strong>THE WARREN</strong> is now streaming on Tubi. Through Goldwood Cinema, Johnny continues to develop film, television, animation, and emerging-format stories with commercial hooks and layered emotional engines.
+            </p>
+          </div>
+        </section>
+
+        <section class="post recognition-strip">
+          <header class="major">
+            <span class="eyebrow">Recognition</span>
+            <h2>Produced Work & Industry Footprint</h2>
+          </header>
+
+          <div class="recognition-box">
+            <p>
+              <strong>THE WARREN</strong> — Produced Feature Film • Streaming on Tubi • Distributed through Filmhub • Narrative Filmmaker Reel • National and Regional Commercial Work
+            </p>
+          </div>
+        </section>
+
         <section id="trailers" class="posts">
 
           <article>
-            <header>
-              <span class="date">Psychological Thriller</span>
-              <h2>ICE MAIDEN</h2>
-            </header>
+            <header><span class="date">Psychological Thriller</span><h2>ICE MAIDEN</h2></header>
             <a href="https://youtu.be/RBFohZAoOpU" class="image fit" target="_blank" rel="noopener">
               <img src="https://img.youtube.com/vi/RBFohZAoOpU/maxresdefault.jpg" alt="ICE MAIDEN proof-of-concept trailer" />
             </a>
-            <p>
-              A proof-of-concept trailer for a psychological thriller about a brilliant detective drawn into a dangerous connection with a ritualistic killer.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
+            <p>A proof-of-concept trailer for a psychological thriller about a brilliant detective drawn into a dangerous connection with a ritualistic killer.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li></ul>
           </article>
 
           <article>
-            <header>
-              <span class="date">Romantic Comedy</span>
-              <h2>HE SEES HER</h2>
-            </header>
+            <header><span class="date">Romantic Comedy</span><h2>HE SEES HER</h2></header>
             <a href="https://youtu.be/qE-mvcEAWrc" class="image fit" target="_blank" rel="noopener">
               <img src="https://img.youtube.com/vi/qE-mvcEAWrc/maxresdefault.jpg" alt="HE SEES HER proof-of-concept trailer" />
             </a>
-            <p>
-              A character-driven romantic comedy about a fearless relationship podcaster whose public experiment unravels when she meets someone who refuses to play by her rules.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
+            <p>A character-driven romantic comedy about a fearless relationship podcaster whose public experiment unravels when she meets someone who refuses to play by her rules.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li></ul>
           </article>
 
           <article>
-            <header>
-              <span class="date">World War II Action / Espionage</span>
-              <h2>MOB SQUAD</h2>
-            </header>
+            <header><span class="date">World War II Action / Espionage</span><h2>MOB SQUAD</h2></header>
             <a href="https://youtu.be/Oj3GnDQc4yM" class="image fit" target="_blank" rel="noopener">
               <img src="https://img.youtube.com/vi/Oj3GnDQc4yM/maxresdefault.jpg" alt="MOB SQUAD proof-of-concept trailer" />
             </a>
-            <p>
-              A WWII action ensemble about imprisoned mobsters recruited for a covert mission against Hitler’s war machine — only to discover a mission worth becoming heroes for.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
+            <p>A WWII action ensemble about imprisoned mobsters recruited for a covert mission against Hitler’s war machine — only to discover a mission worth becoming heroes for.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li></ul>
           </article>
 
           <article>
-            <header>
-              <span class="date">Animated Fantasy Adventure</span>
-              <h2>VERONICA</h2>
-            </header>
+            <header><span class="date">Animated Fantasy Adventure</span><h2>VERONICA</h2></header>
             <a href="https://youtu.be/E2drTQ__NbU" class="image fit" target="_blank" rel="noopener">
               <img src="https://img.youtube.com/vi/E2drTQ__NbU/maxresdefault.jpg" alt="VERONICA proof-of-concept trailer" />
             </a>
-            <p>
-              An animated family fantasy adventure rooted in folklore, wonder, humor, emotional courage, and the power of bringing light back to a darkened kingdom.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
+            <p>An animated family fantasy adventure rooted in folklore, wonder, humor, emotional courage, and the power of bringing light back to a darkened kingdom.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li></ul>
           </article>
 
           <article>
-            <header>
-              <span class="date">Hardcore Action Animation</span>
-              <h2>PAGANS</h2>
-            </header>
+            <header><span class="date">Hardcore Action Animation</span><h2>PAGANS</h2></header>
             <a href="https://youtu.be/cXHl0L0x_MY" class="image fit" target="_blank" rel="noopener">
               <img src="https://img.youtube.com/vi/cXHl0L0x_MY/maxresdefault.jpg" alt="PAGANS proof-of-concept trailer" />
             </a>
-            <p>
-              A visceral animated action concept with mythic stakes, brutal momentum, and a hard-edged visual identity built for high-impact serialized storytelling.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
+            <p>A visceral animated action concept with mythic stakes, brutal momentum, and a hard-edged visual identity built for high-impact serialized storytelling.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li></ul>
           </article>
 
         </section>
 
-        <!-- Currently Developing -->
         <section id="developing" class="post currently-developing">
           <header class="major">
             <span class="eyebrow">Currently Developing</span>
@@ -291,9 +254,7 @@
           </header>
 
           <div class="statement-body">
-            <p class="lead">
-              My current slate moves across genre, but the creative engine stays the same: accessible entertainment with deeper emotional layers underneath.
-            </p>
+            <p class="lead">My current slate moves across genre, but the creative engine stays the same: accessible entertainment with deeper emotional layers underneath.</p>
 
             <ul class="project-list">
               <li><strong>ICE MAIDEN</strong> — Psychological thriller about obsession, identity, and the darkness hidden beneath emotional restraint.</li>
@@ -305,21 +266,14 @@
           </div>
         </section>
 
-        <!-- Selected Work -->
         <section id="work" class="posts">
 
           <article id="feature">
-            <header>
-              <span class="date">Completed Feature</span>
-              <h2>THE WARREN</h2>
-            </header>
+            <header><span class="date">Completed Feature</span><h2>THE WARREN</h2></header>
             <a href="https://tubitv.com/movies/100047968/the-warren" class="image fit" target="_blank" rel="noopener">
               <img src="images/warren-poster.jpg" alt="THE WARREN feature film" />
             </a>
-            <p>
-              Award-nominated feature thriller now streaming on Tubi.
-              A performance-driven story built on tension, moral pressure, and consequence.
-            </p>
+            <p>Award-nominated feature thriller now streaming on Tubi. A performance-driven story built on tension, moral pressure, and consequence.</p>
             <ul class="actions special">
               <li><a href="https://tubitv.com/movies/100047968/the-warren" class="button primary" target="_blank" rel="noopener">Watch on Tubi</a></li>
               <li><a href="https://youtu.be/lr25jL8Ihcc" class="button" target="_blank" rel="noopener">Trailer</a></li>
@@ -327,32 +281,20 @@
           </article>
 
           <article id="reel">
-            <header>
-              <span class="date">Filmmaker Reel</span>
-              <h2>Director Reel</h2>
-            </header>
+            <header><span class="date">Filmmaker Reel</span><h2>Director Reel</h2></header>
             <a href="https://youtu.be/t8nIq_HnDp4" class="image fit" target="_blank" rel="noopener">
               <img src="images/Reel.jpg" alt="Director Reel" />
             </a>
-            <p>
-              Selected moments across narrative and commercial work — focused on performance, tone, visual intent, and cinematic execution.
-            </p>
-            <ul class="actions special">
-              <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Reel</a></li>
-            </ul>
+            <p>Selected moments across narrative and commercial work — focused on performance, tone, visual intent, and cinematic execution.</p>
+            <ul class="actions special"><li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Reel</a></li></ul>
           </article>
 
           <article>
-            <header>
-              <span class="date">Short-Form Commercial Storytelling</span>
-              <h2>Commercial Specs</h2>
-            </header>
+            <header><span class="date">Short-Form Commercial Storytelling</span><h2>Commercial Specs</h2></header>
             <a href="https://youtu.be/P0kkne1MlRQ" class="image fit" target="_blank" rel="noopener">
               <img src="images/commercial.jpg" alt="Commercial work" />
             </a>
-            <p>
-              Fan-made spec commercials showcasing platform-native, short-form ad storytelling in a social-first format.
-            </p>
+            <p>Fan-made spec commercials showcasing platform-native, short-form ad storytelling in a social-first format.</p>
             <ul class="actions special">
               <li><a href="https://youtu.be/P0kkne1MlRQ" class="button primary" target="_blank" rel="noopener">Pepsi</a></li>
               <li><a href="https://youtu.be/a85yzxWSUTc" class="button" target="_blank" rel="noopener">Subway</a></li>
@@ -360,22 +302,38 @@
           </article>
 
           <article>
-            <header>
-              <span class="date">Stylized Performance Piece</span>
-              <h2>Music Video</h2>
-            </header>
+            <header><span class="date">Stylized Performance Piece</span><h2>Music Video</h2></header>
             <a href="https://www.youtube.com/watch?v=dH8GyN3LyGw" class="image fit" target="_blank" rel="noopener">
               <img src="images/musicvideo.jpg" alt="Music video" />
             </a>
             <p>Stylized, performance-forward storytelling with a strong visual identity and rhythm.</p>
-            <ul class="actions special">
-              <li><a href="https://www.youtube.com/watch?v=dH8GyN3LyGw" class="button primary" target="_blank" rel="noopener">Watch Video</a></li>
-            </ul>
+            <ul class="actions special"><li><a href="https://www.youtube.com/watch?v=dH8GyN3LyGw" class="button primary" target="_blank" rel="noopener">Watch Video</a></li></ul>
           </article>
 
         </section>
 
-        <!-- Storytelling Philosophy -->
+        <section id="acting" class="post acting-section">
+          <header class="major">
+            <span class="eyebrow">Acting</span>
+            <h2>Performance Background</h2>
+          </header>
+
+          <div class="statement-body">
+            <p class="lead">
+              Before and alongside filmmaking, Johnny built a performance background across commercial and narrative work.
+            </p>
+
+            <p>
+              His acting experience includes national commercial campaigns, regional Spanish and English-language spots, and performance-driven narrative work. That performer’s perspective continues to shape his directing style — especially his focus on trust, emotional truth, and giving actors room to discover the moment.
+            </p>
+
+            <ul class="actions">
+              <li><a href="https://imdb.me/johnnyolvera" class="button primary" target="_blank" rel="noopener">View IMDb</a></li>
+              <li><a href="https://youtu.be/t8nIq_HnDp4" class="button" target="_blank" rel="noopener">Watch Reel</a></li>
+            </ul>
+          </div>
+        </section>
+
         <section id="philosophy" class="post storytelling-philosophy">
           <header class="major">
             <span class="eyebrow">Storytelling Philosophy</span>
@@ -384,20 +342,9 @@
           </header>
 
           <div class="statement-body">
-            <p class="lead">
-              I believe stories should welcome everyone.
-            </p>
-
-            <p>
-              Some audiences come for fun. Some come for emotion. Some come for tension, romance, spectacle, laughter, fear, or escape.
-              My goal is never to separate those audiences — it is to invite all of them into the same experience.
-            </p>
-
-            <p>
-              I create stories that are accessible on the surface and deeper for those willing to look beneath it.
-              The audience should never have to work in order to be entertained. But for those who want more, there should always be more waiting:
-              emotional truth, shared experience, reflection, vulnerability, and discovery.
-            </p>
+            <p class="lead">I believe stories should welcome everyone.</p>
+            <p>Some audiences come for fun. Some come for emotion. Some come for tension, romance, spectacle, laughter, fear, or escape. My goal is never to separate those audiences — it is to invite all of them into the same experience.</p>
+            <p>I create stories that are accessible on the surface and deeper for those willing to look beneath it. The audience should never have to work in order to be entertained. But for those who want more, there should always be more waiting: emotional truth, shared experience, reflection, vulnerability, and discovery.</p>
 
             <div class="principles">
               <p class="principles-intro">That is the kind of cinema I believe in:</p>
@@ -408,18 +355,10 @@
               </ul>
             </div>
 
-            <p>
-              If someone simply wants to be entertained, I want them entertained. If someone comes looking for meaning,
-              I want them to find an endless supply of lessons and shared experiences to eat from.
-            </p>
-
-            <p class="signature">
-              <strong>If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.</strong>
-            </p>
+            <p><strong>If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.</strong></p>
           </div>
         </section>
 
-        <!-- Director's Statement -->
         <section id="statement" class="post log-principle">
           <header class="major">
             <span class="eyebrow">Director’s Statement</span>
@@ -428,31 +367,13 @@
           </header>
 
           <div class="statement-body">
-            <p class="lead">
-              I direct from a simple belief: people are more capable than we give them credit for.
-            </p>
-
-            <p>
-              I call it <strong>The Log Principle™</strong>.
-            </p>
-
-            <p>
-              If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand.
-              And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.
-            </p>
-
-            <p>
-              Because the moment you over-direct, over-explain, or over-control — you rob people of the opportunity to bring something real to the work.
-              I assume competence.
-            </p>
-
-            <p>
-              That doesn’t mean I’m absent. It means I’m intentional. I’m always watching, always engaged — but I step in only when it matters:
-              when there’s a real risk, a true gap, or an opportunity to elevate the moment in a meaningful way.
-            </p>
+            <p class="lead">I direct from a simple belief: people are more capable than we give them credit for.</p>
+            <p>I call it <strong>The Log Principle™</strong>.</p>
+            <p>If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand. And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.</p>
+            <p>Because the moment you over-direct, over-explain, or over-control — you rob people of the opportunity to bring something real to the work. I assume competence.</p>
+            <p>That doesn’t mean I’m absent. It means I’m intentional. I’m always watching, always engaged — but I step in only when it matters.</p>
 
             <div class="principles">
-              <p class="principles-intro">What that creates is a set where:</p>
               <ul>
                 <li>Actors feel trusted, not managed</li>
                 <li>Collaborators take ownership</li>
@@ -460,28 +381,29 @@
               </ul>
             </div>
 
-            <p>
-              I’m not interested in perfect control. I’m interested in authentic moments that can only happen when people are given space to meet the material on their own terms.
-            </p>
-
-            <p>
-              The best work doesn’t come from being told exactly what to do.
-              It comes from being trusted to do it.
-            </p>
-
-            <p class="closing">
-              That’s the environment I create.
-            </p>
-
-            <p class="signature">
-              <strong>Cross your own log — and bring something only you could have found.</strong>
-            </p>
+            <p><strong>Cross your own log — and bring something only you could have found.</strong></p>
           </div>
         </section>
 
-      </div><!-- end #main -->
+        <section class="post goldwood-crosslink">
+          <header class="major">
+            <span class="eyebrow">Goldwood Cinema</span>
+            <h2>Film, Television & Animation Slate</h2>
+          </header>
 
-      <!-- Footer -->
+          <div class="goldwood-box">
+            <p>
+              For current film, television, animation, and emerging-format projects, visit <strong>Goldwood Cinema</strong> — the home of Johnny Olvera’s active development slate.
+            </p>
+
+            <ul class="actions">
+              <li><a href="https://goldwoodcinema.com" class="button primary" target="_blank" rel="noopener">Visit Goldwood Cinema</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
       <footer id="footer">
         <section>
           <h3>Contact</h3>
@@ -505,28 +427,17 @@
             <h3>Email</h3>
             <p><a href="mailto:jawknee.olvera@gmail.com">jawknee.olvera@gmail.com</a></p>
           </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-              <li><a href="https://imdb.me/johnnyolvera" class="icon solid alt fa-film" target="_blank" rel="noopener"><span class="label">IMDb</span></a></li>
-              <li><a href="https://www.linkedin.com/in/johnnyolvera/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://youtu.be/t8nIq_HnDp4" class="icon brands alt fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
-              <li><a href="https://www.instagram.com/thewarrenfilm/" class="icon brands alt fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
-            </ul>
-          </section>
         </section>
       </footer>
 
       <div id="copyright">
         <ul>
           <li>&copy; Johnny Olvera / Goldwood Cinema LLC</li>
-          <li>Design: <a href="https://artdepartmental.com/resources/production-design-websites/" target="_blank" rel="noopener">ART DEPARTMENTAL</a></li>
         </ul>
       </div>
 
-    </div><!-- end #wrapper -->
+    </div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -534,6 +445,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
   </body>
 </html>
