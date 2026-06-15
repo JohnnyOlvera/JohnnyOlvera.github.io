@@ -1,758 +1,747 @@
 <!DOCTYPE HTML>
+
 <html>
   <head>
-    <title>Johnny Olvera | Writer • Director • Actor</title>
-    <meta name="description" content="Johnny Olvera is a produced writer, director, actor, and founder of Goldwood Cinema. A cinematic portfolio experience featuring THE WARREN, director reel, proof-of-concept trailers, and selected work." />
+    <title>Johnny Olvera | The Producer's Director</title>
+    <meta name="description" content="Johnny Olvera is The Producer's Director — a writer/director whose background spans acting, script supervision, assistant directing, producing, writing, and directing. Creative Vision. Production Discipline." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+```
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-      :root {
-        --black: #050505;
-        --charcoal: #111111;
-        --soft-black: #181818;
-        --silver: #b8b8b8;
-        --white: #ededed;
-        --gold: #c6a46a;
-        --ice: #7da7c9;
-        --crimson: #6b2c2c;
-      }
+  :root {
+    --black: #050505;
+    --charcoal: #111111;
+    --soft-black: #181818;
+    --silver: #b8b8b8;
+    --white: #ededed;
+    --gold: #c6a46a;
+    --ice: #7da7c9;
+    --crimson: #6b2c2c;
+  }
 
-      html {
-        scroll-behavior: smooth;
-      }
+  html { scroll-behavior: smooth; }
 
-      body {
-        background: var(--black);
-        color: var(--white);
-        font-family: 'Inter', sans-serif;
-      }
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+  }
 
-      body:before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        background:
-          radial-gradient(circle at 20% 20%, rgba(198,164,106,0.08), transparent 30%),
-          radial-gradient(circle at 80% 40%, rgba(125,167,201,0.07), transparent 35%),
-          linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
-        z-index: 0;
-      }
+  body:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(198,164,106,0.08), transparent 30%),
+      radial-gradient(circle at 80% 40%, rgba(125,167,201,0.07), transparent 35%),
+      linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
+    z-index: 0;
+  }
 
-      h1, h2, h3 {
-        font-family: 'Cormorant Garamond', serif;
-        letter-spacing: 0.04em;
-      }
+  h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.04em;
+  }
 
-      #wrapper {
-        background: transparent;
-      }
+  #wrapper { background: transparent; }
 
-      #intro {
-        min-height: 100vh;
-        padding: 8rem 2rem 5rem 2rem;
-        position: relative;
-        background:
-          linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.95)),
-          url("images/Reel.jpg") center center / cover no-repeat;
-        overflow: hidden;
-      }
+  #intro {
+    min-height: 100vh;
+    padding: 8rem 2rem 5rem 2rem;
+    position: relative;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.95)),
+      url("images/Reel.jpg") center center / cover no-repeat;
+    overflow: hidden;
+  }
 
-      #intro:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.45), rgba(0,0,0,0.85)),
-          radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.72) 70%);
-        z-index: 1;
-      }
+  #intro:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.88), rgba(0,0,0,0.48), rgba(0,0,0,0.88)),
+      radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.74) 70%);
+    z-index: 1;
+  }
 
-      #intro:after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
-        background-size: 100% 4px;
-        opacity: 0.22;
-        z-index: 2;
-        pointer-events: none;
-      }
+  #intro:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 100% 4px;
+    opacity: 0.22;
+    z-index: 2;
+    pointer-events: none;
+  }
 
-      #intro > * {
-        position: relative;
-        z-index: 3;
-      }
+  #intro > * {
+    position: relative;
+    z-index: 3;
+  }
 
-      #intro h1 {
-        font-size: clamp(3rem, 8vw, 7rem);
-        line-height: 0.9;
-        margin-bottom: 1.5rem;
-        animation: revealUp 1.2s ease both;
-      }
+  #intro h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+    animation: revealUp 1.2s ease both;
+  }
 
-      .eyebrow {
-        display: inline-block;
-        margin-bottom: 1rem;
-        font-size: 0.75rem;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
 
-      .hero-statement {
-        max-width: 760px;
-        margin: 1.5rem auto;
-        font-size: 1.15rem;
-        line-height: 1.9;
-        color: rgba(237,237,237,0.88);
-        animation: revealUp 1.4s ease both;
-      }
+  .hero-subtitle {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: clamp(0.95rem, 1.7vw, 1.35rem);
+    margin: 0 auto 1.5rem auto;
+    font-weight: 600;
+  }
 
-      .manifesto-line {
-        max-width: 820px;
-        margin: 2rem auto;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(1.35rem, 2.5vw, 2.1rem);
-        line-height: 1.45;
-        font-style: italic;
-        color: var(--white);
-        animation: revealUp 1.6s ease both;
-      }
+  .hero-statement {
+    max-width: 820px;
+    margin: 1.5rem auto;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: rgba(237,237,237,0.88);
+    animation: revealUp 1.4s ease both;
+  }
 
-      .button {
-        border-radius: 999px !important;
-        letter-spacing: 0.13em;
-      }
+  .manifesto-line {
+    max-width: 820px;
+    margin: 2rem auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--white);
+    animation: revealUp 1.6s ease both;
+  }
 
-      .button.primary {
-        background: var(--white) !important;
-        color: #050505 !important;
-      }
+  .button {
+    border-radius: 999px !important;
+    letter-spacing: 0.13em;
+  }
 
-      #nav {
-        background: rgba(5,5,5,0.92);
-        backdrop-filter: blur(10px);
-      }
+  .button.primary {
+    background: var(--white) !important;
+    color: #050505 !important;
+  }
 
-      #main {
-        background: var(--black);
-      }
+  #nav {
+    background: rgba(5,5,5,0.92);
+    backdrop-filter: blur(10px);
+  }
 
-      .cinematic-section {
-        max-width: 1040px;
-        margin: 0 auto;
-      }
+  #main { background: var(--black); }
 
-      .post {
-        background: transparent !important;
-        border-top: 1px solid rgba(255,255,255,0.08) !important;
-      }
+  .cinematic-section {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
 
-      .post .major {
-        text-align: left;
-      }
+  .post {
+    background: transparent !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+  }
 
-      .post h2 {
-        font-size: clamp(2.4rem, 5vw, 4.5rem);
-        line-height: 0.95;
-        margin-bottom: 1.25rem;
-      }
+  .post .major { text-align: left; }
 
-      .statement-body {
-        font-size: 1.05rem;
-        line-height: 1.95;
-        color: rgba(237,237,237,0.82);
-      }
+  .post h2 {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 0.95;
+    margin-bottom: 1.25rem;
+  }
 
-      .lead {
-        font-size: clamp(1.25rem, 2vw, 1.65rem);
-        line-height: 1.65;
-        color: var(--white);
-      }
+  .statement-body {
+    font-size: 1.05rem;
+    line-height: 1.95;
+    color: rgba(237,237,237,0.82);
+  }
 
-      .credibility-strip {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin-top: 2.5rem;
-      }
+  .lead {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    line-height: 1.65;
+    color: var(--white);
+  }
 
-      .credibility-item {
-        padding: 1.5rem;
-        background: linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.018));
-        border: 1px solid rgba(255,255,255,0.1);
-      }
+  .credibility-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
 
-      .credibility-item strong {
-        display: block;
-        color: var(--gold);
-        font-size: 0.8rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
+  .credibility-item {
+    padding: 1.5rem;
+    background: linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.018));
+    border: 1px solid rgba(255,255,255,0.1);
+  }
 
-      .credibility-item span {
-        display: block;
-        margin-top: 0.6rem;
-        color: rgba(237,237,237,0.72);
-      }
+  .credibility-item strong {
+    display: block;
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
 
-      .feature-frame {
-        margin: 2rem 0;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid rgba(255,255,255,0.12);
-        box-shadow: 0 40px 80px rgba(0,0,0,0.45);
-      }
+  .credibility-item span {
+    display: block;
+    margin-top: 0.6rem;
+    color: rgba(237,237,237,0.72);
+  }
 
-      .feature-frame img {
-        width: 100%;
-        display: block;
-        filter: contrast(1.06) saturate(0.9);
-      }
+  .feature-frame {
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+  }
 
-      .prestige-box,
-      .principles,
-      .goldwood-box {
-        margin: 2rem 0;
-        padding: 1.5rem;
-        background: rgba(255,255,255,0.035);
-        border-left: 3px solid var(--gold);
-      }
+  .feature-frame img {
+    width: 100%;
+    display: block;
+    filter: contrast(1.06) saturate(0.9);
+  }
 
-      .project-cinema {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        min-height: 520px;
-        border-top: 1px solid rgba(255,255,255,0.08);
-        background: var(--charcoal);
-      }
+  .prestige-box,
+  .principles,
+  .goldwood-box {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.035);
+    border-left: 3px solid var(--gold);
+  }
 
-      .project-cinema:nth-child(even) .project-visual {
-        order: 2;
-      }
+  .prestige-box strong,
+  .principles strong,
+  .goldwood-box strong {
+    color: var(--white);
+  }
 
-      .project-visual {
-        min-height: 520px;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-      }
+  .project-cinema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    background: var(--charcoal);
+  }
 
-      .project-visual:after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
-      }
+  .project-cinema:nth-child(even) .project-visual { order: 2; }
 
-      .project-copy {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4rem;
-      }
+  .project-visual {
+    min-height: 520px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
 
-      .project-copy h2 {
-        margin-bottom: 0.5rem;
-      }
+  .project-visual:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.75));
+  }
 
-      .project-copy p {
-        font-size: 1.05rem;
-        line-height: 1.8;
-        color: rgba(237,237,237,0.78);
-      }
+  .project-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+  }
 
-      .project-copy .genre {
-        color: var(--gold);
-        text-transform: uppercase;
-        letter-spacing: 0.18em;
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
-      }
+  .project-copy h2 { margin-bottom: 0.5rem; }
 
-      .philosophy-quote {
-        margin: 2rem 0;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: clamp(1.8rem, 3vw, 3rem);
-        line-height: 1.25;
-        color: var(--white);
-      }
+  .project-copy p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(237,237,237,0.78);
+  }
 
-      .goldwood-final {
-        text-align: center;
-        padding: 6rem 2rem !important;
-        background:
-          linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
-          url("images/warren-poster.jpg") center center / cover no-repeat !important;
-      }
+  .project-copy .genre {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
 
-      .goldwood-final h2 {
-        text-align: center;
-      }
+  .philosophy-quote {
+    margin: 2rem 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.25;
+    color: var(--white);
+  }
 
-      #footer {
-        background: #090909;
-        color: var(--white);
-      }
+  .goldwood-final {
+    text-align: center;
+    padding: 6rem 2rem !important;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
+      url("images/warren-poster.jpg") center center / cover no-repeat !important;
+  }
 
-      #footer input,
-      #footer textarea {
-        color: var(--white) !important;
-      }
+  .goldwood-final h2 { text-align: center; }
 
-      #copyright {
-        color: rgba(237,237,237,0.5);
-      }
+  #footer {
+    background: #090909;
+    color: var(--white);
+  }
 
-      .reveal {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease, transform 1s ease;
-      }
+  #footer input,
+  #footer textarea {
+    color: var(--white) !important;
+  }
 
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  #copyright { color: rgba(237,237,237,0.5); }
 
-      @keyframes revealUp {
-        from {
-          opacity: 0;
-          transform: translateY(24px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
 
-      @media screen and (max-width: 980px) {
-        .project-cinema {
-          grid-template-columns: 1fr;
-        }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-        .project-cinema:nth-child(even) .project-visual {
-          order: 0;
-        }
+  @keyframes revealUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-        .project-copy {
-          padding: 3rem 2rem;
-        }
-      }
+  @media screen and (max-width: 980px) {
+    .project-cinema { grid-template-columns: 1fr; }
+    .project-cinema:nth-child(even) .project-visual { order: 0; }
+    .project-copy { padding: 3rem 2rem; }
+  }
 
-      @media screen and (max-width: 736px) {
-        #intro {
-          padding: 7rem 1.5rem 4rem 1.5rem;
-        }
+  @media screen and (max-width: 736px) {
+    #intro { padding: 7rem 1.5rem 4rem 1.5rem; }
+    .credibility-strip { grid-template-columns: 1fr; }
+    .project-visual { min-height: 340px; }
+    .project-cinema { min-height: auto; }
+  }
+</style>
+```
 
-        .credibility-strip {
-          grid-template-columns: 1fr;
-        }
-
-        .project-visual {
-          min-height: 340px;
-        }
-
-        .project-cinema {
-          min-height: auto;
-        }
-      }
-    </style>
   </head>
 
   <body class="is-preload">
     <div id="wrapper" class="fade-in">
 
-      <div id="intro">
-        <p class="eyebrow">Produced Filmmaker</p>
+```
+  <div id="intro">
+    <p class="eyebrow">Johnny Olvera</p>
 
-        <h1>Johnny Olvera<br />Writer • Director • Actor</h1>
+    <h1>The Producer's<br />Director</h1>
 
-        <p class="hero-statement">
-          A produced filmmaker creating character-driven genre stories built with cinematic hooks, emotional consequence, and layered meaning beneath the surface.
+    <p class="hero-subtitle">Creative Vision. Production Discipline.</p>
+
+    <p class="hero-statement">
+      Writer/director Johnny Olvera brings a rare 360-degree filmmaking perspective shaped by more than 30 years as a SAG-AFTRA actor, 12 years as a script supervisor, assistant directing experience, producing, writing, and directing.
+    </p>
+
+    <p class="manifesto-line">
+      “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
+    </p>
+
+    <ul class="actions">
+      <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Director Reel</a></li>
+      <li><a href="#about" class="button">Meet Johnny</a></li>
+      <li><a href="https://www.goldwoodcinema.com" class="button" target="_blank" rel="noopener">Goldwood Cinema</a></li>
+    </ul>
+  </div>
+
+  <header id="header">
+    <a href="#intro" class="logo">Johnny Olvera</a>
+  </header>
+
+  <nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="#intro">Home</a></li>
+      <li><a href="#about">Director</a></li>
+      <li><a href="#warren">THE WARREN</a></li>
+      <li><a href="#reel">Reel</a></li>
+      <li><a href="#selected-work">Selected Work</a></li>
+      <li><a href="#acting">Acting</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+
+    <ul class="icons alt">
+      <li><a href="https://imdb.me/johnnyolvera" class="icon solid alt fa-film" target="_blank" rel="noopener"><span class="label">IMDb</span></a></li>
+      <li><a href="https://www.linkedin.com/in/johnnyolvera/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://youtu.be/t8nIq_HnDp4" class="icon brands alt fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
+      <li><a href="https://www.instagram.com/thewarrenfilm/" class="icon brands alt fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+    </ul>
+  </nav>
+
+  <div id="main">
+
+    <section id="about" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">The Producer's Director</span>
+        <h2>A filmmaker built for both the creative and practical realities of production.</h2>
+      </header>
+
+      <div class="statement-body">
+        <p class="lead">
+          Johnny Olvera is a writer/director and founder of Goldwood Cinema, creating elevated commercial genre stories built with creative vision and production discipline.
         </p>
 
-        <p class="manifesto-line">
-          “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
+        <p>
+          His background spans acting, script supervision, assistant directing, producing, writing, and directing. That combination gives him a practical understanding of performance, story, scheduling, continuity, coverage, production logistics, and post-production workflow.
+        </p>
+
+        <p>
+          Johnny's work focuses on genre storytelling that invites audiences in through entertainment, then rewards them with emotional consequence and layered meaning underneath.
+        </p>
+      </div>
+
+      <div class="credibility-strip">
+        <div class="credibility-item">
+          <strong>30+ Years SAG-AFTRA Actor</strong>
+          <span>A lifelong understanding of performance, actor communication, and emotional truth.</span>
+        </div>
+
+        <div class="credibility-item">
+          <strong>12 Years Script Supervisor</strong>
+          <span>Deep experience with continuity, coverage, editorial workflow, and production discipline.</span>
+        </div>
+
+        <div class="credibility-item">
+          <strong>Director of THE WARREN</strong>
+          <span>A completed feature film that moved from screenplay to production, post, distribution, and audience release.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="warren" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Proof of Execution</span>
+        <h2>THE WARREN</h2>
+      </header>
+
+      <div class="feature-frame">
+        <a href="https://tubitv.com/movies/100047968/the-warren" target="_blank" rel="noopener">
+          <img src="images/warren-poster.jpg" alt="THE WARREN feature film" />
+        </a>
+      </div>
+
+      <div class="statement-body">
+        <p class="lead">
+          A completed feature thriller now streaming on Tubi.
+        </p>
+
+        <p>
+          <strong>THE WARREN</strong> is a neo-noir detective mystery told through shifting perspectives, suspicion, guilt, and the dangerous unreliability of personal truth.
+        </p>
+
+        <div class="prestige-box">
+          <p>
+            Produced Feature Film • Streaming on Tubi • Distributed through Filmhub • Written and Directed by Johnny Olvera
+          </p>
+        </div>
+
+        <ul class="actions">
+          <li><a href="https://tubitv.com/movies/100047968/the-warren" class="button primary" target="_blank" rel="noopener">Watch on Tubi</a></li>
+          <li><a href="https://youtu.be/lr25jL8Ihcc" class="button" target="_blank" rel="noopener">Watch Trailer</a></li>
+          <li><a href="https://imdb.me/johnnyolvera" class="button" target="_blank" rel="noopener">View IMDb</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reel" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Filmmaker Reel</span>
+        <h2>Director Reel</h2>
+      </header>
+
+      <div class="feature-frame">
+        <a href="https://youtu.be/t8nIq_HnDp4" target="_blank" rel="noopener">
+          <img src="images/Reel.jpg" alt="Johnny Olvera Director Reel" />
+        </a>
+      </div>
+
+      <div class="statement-body">
+        <p>
+          Selected moments across narrative and commercial work — focused on performance, tone, visual intent, and cinematic execution.
         </p>
 
         <ul class="actions">
           <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Director Reel</a></li>
-          <li><a href="https://tubitv.com/movies/100047968/the-warren" class="button" target="_blank" rel="noopener">Watch THE WARREN</a></li>
-          <li><a href="https://www.goldwoodcinema.com" class="button" target="_blank" rel="noopener">Goldwood Cinema</a></li>
         </ul>
       </div>
+    </section>
 
-      <header id="header">
-        <a href="#intro" class="logo">Johnny Olvera</a>
+    <section id="selected-work" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Proof-of-concept trailers designed to communicate tone, audience, and cinematic intent.</h2>
+      </header>
+    </section>
+
+    <section class="project-cinema reveal">
+      <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/RBFohZAoOpU/maxresdefault.jpg');"></div>
+      <div class="project-copy">
+        <span class="genre">Primary Industry Project • Psychological Thriller</span>
+        <h2>ICE MAIDEN</h2>
+        <p>A contained psychological detective thriller in the vein of SILENCE OF THE LAMBS and SE7EN. A brilliant detective begins to recognize herself in the monster she hunts.</p>
+        <ul class="actions">
+          <li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-cinema reveal">
+      <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/Oj3GnDQc4yM/maxresdefault.jpg');"></div>
+      <div class="project-copy">
+        <span class="genre">Commercial Action Package • WWII Ensemble Thriller</span>
+        <h2>MOB SQUAD</h2>
+        <p>THE DIRTY DOZEN meets INGLOURIOUS BASTERDS. Criminals are recruited to sabotage Hitler's war machine — and discover a reason to become heroes.</p>
+        <ul class="actions">
+          <li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-cinema reveal">
+      <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/qE-mvcEAWrc/maxresdefault.jpg');"></div>
+      <div class="project-copy">
+        <span class="genre">Romantic Comedy</span>
+        <h2>HE SEES HER</h2>
+        <p>A relationship podcaster turns love into a public experiment — until someone refuses to become content.</p>
+        <ul class="actions">
+          <li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-cinema reveal">
+      <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/E2drTQ__NbU/maxresdefault.jpg');"></div>
+      <div class="project-copy">
+        <span class="genre">Animated Family Fantasy Adventure</span>
+        <h2>VERONICA</h2>
+        <p>A folklore-inspired fantasy adventure about courage, humor, and bringing light back to a darkened kingdom.</p>
+        <ul class="actions">
+          <li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-cinema reveal">
+      <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/cXHl0L0x_MY/maxresdefault.jpg');"></div>
+      <div class="project-copy">
+        <span class="genre">Animated Action Series</span>
+        <h2>PAGANS</h2>
+        <p>A visceral animated action concept with mythic stakes, brutal momentum, and serialized impact.</p>
+        <ul class="actions">
+          <li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="acting" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Performance Background</span>
+        <h2>The director’s eye shaped by the actor’s instinct.</h2>
       </header>
 
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#warren">THE WARREN</a></li>
-          <li><a href="#reel">Director Reel</a></li>
-          <li><a href="#selected-work">Selected Work</a></li>
-          <li><a href="#acting">Acting</a></li>
-          <li><a href="#philosophy">Philosophy</a></li>
-          <li><a href="#statement">Statement</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
+      <div class="statement-body">
+        <p class="lead">
+          Johnny's directing is shaped by decades of performance experience.
+        </p>
 
-        <ul class="icons alt">
-          <li><a href="https://imdb.me/johnnyolvera" class="icon solid alt fa-film" target="_blank" rel="noopener"><span class="label">IMDb</span></a></li>
-          <li><a href="https://www.linkedin.com/in/johnnyolvera/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-          <li><a href="https://youtu.be/t8nIq_HnDp4" class="icon brands alt fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
-          <li><a href="https://www.instagram.com/thewarrenfilm/" class="icon brands alt fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
-        </ul>
-      </nav>
+        <p>
+          His acting background includes national commercial campaigns, regional Spanish and English-language spots, and narrative performance work. That perspective informs his directing style — especially his focus on trust, emotional truth, and giving actors space to discover authentic moments.
+        </p>
 
-      <div id="main">
-
-        <section id="about" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">The Filmmaker</span>
-            <h2>Stories that invite everyone in — then reward those who look deeper.</h2>
-          </header>
-
-          <div class="statement-body">
-            <p class="lead">
-              Johnny Olvera is a produced writer, director, actor, and founder of Goldwood Cinema.
-            </p>
-
-            <p>
-              His work blends genre entertainment with emotional consequence — thrillers, comedies, action stories, animation, and cinematic concepts designed to move with commercial clarity while carrying something human underneath.
-            </p>
-
-            <p>
-              The work is built for audiences first: accessible, energetic, emotional, and layered. Entertainment on the surface. Meaning underneath.
-            </p>
-          </div>
-
-          <div class="credibility-strip">
-            <div class="credibility-item">
-              <strong>Produced Feature</strong>
-              <span>THE WARREN streaming on Tubi</span>
-            </div>
-
-            <div class="credibility-item">
-              <strong>Director Reel</strong>
-              <span>Narrative and commercial storytelling</span>
-            </div>
-
-            <div class="credibility-item">
-              <strong>Goldwood Cinema</strong>
-              <span>Film, television, and animation slate</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="warren" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Produced Feature Film</span>
-            <h2>THE WARREN</h2>
-          </header>
-
-          <div class="feature-frame">
-            <a href="https://tubitv.com/movies/100047968/the-warren" target="_blank" rel="noopener">
-              <img src="images/warren-poster.jpg" alt="THE WARREN feature film" />
-            </a>
-          </div>
-
-          <div class="statement-body">
-            <p class="lead">
-              A completed feature thriller now streaming on Tubi.
-            </p>
-
-            <p>
-              <strong>THE WARREN</strong> is a neo-noir detective mystery told through shifting perspectives, suspicion, guilt, and the dangerous unreliability of personal truth.
-            </p>
-
-            <div class="prestige-box">
-              <p>
-                Produced Feature Film • Streaming on Tubi • Distributed through Filmhub • Written and Directed by Johnny Olvera
-              </p>
-            </div>
-
-            <ul class="actions">
-              <li><a href="https://tubitv.com/movies/100047968/the-warren" class="button primary" target="_blank" rel="noopener">Watch on Tubi</a></li>
-              <li><a href="https://youtu.be/lr25jL8Ihcc" class="button" target="_blank" rel="noopener">Watch Trailer</a></li>
-              <li><a href="https://imdb.me/johnnyolvera" class="button" target="_blank" rel="noopener">View IMDb</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="reel" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Filmmaker Reel</span>
-            <h2>Director Reel</h2>
-          </header>
-
-          <div class="feature-frame">
-            <a href="https://youtu.be/t8nIq_HnDp4" target="_blank" rel="noopener">
-              <img src="images/Reel.jpg" alt="Johnny Olvera Director Reel" />
-            </a>
-          </div>
-
-          <div class="statement-body">
-            <p>
-              Selected moments across narrative and commercial work — focused on performance, tone, visual intent, and cinematic execution.
-            </p>
-
-            <ul class="actions">
-              <li><a href="https://youtu.be/t8nIq_HnDp4" class="button primary" target="_blank" rel="noopener">Watch Director Reel</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="selected-work" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Selected Work</span>
-            <h2>Proof-of-concept trailers designed to communicate tone, audience, and cinematic intent.</h2>
-          </header>
-        </section>
-
-        <section class="project-cinema reveal">
-          <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/RBFohZAoOpU/maxresdefault.jpg');"></div>
-          <div class="project-copy">
-            <span class="genre">Psychological Thriller</span>
-            <h2>ICE MAIDEN</h2>
-            <p>A brilliant detective begins to recognize herself in the monster she hunts.</p>
-            <ul class="actions">
-              <li><a href="https://youtu.be/RBFohZAoOpU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-cinema reveal">
-          <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/qE-mvcEAWrc/maxresdefault.jpg');"></div>
-          <div class="project-copy">
-            <span class="genre">Romantic Comedy</span>
-            <h2>HE SEES HER</h2>
-            <p>A relationship podcaster turns love into a public experiment — until someone refuses to become content.</p>
-            <ul class="actions">
-              <li><a href="https://youtu.be/qE-mvcEAWrc" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-cinema reveal">
-          <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/Oj3GnDQc4yM/maxresdefault.jpg');"></div>
-          <div class="project-copy">
-            <span class="genre">World War II Action / Espionage</span>
-            <h2>MOB SQUAD</h2>
-            <p>Criminals are recruited to sabotage Hitler’s war machine — and discover a reason to become heroes.</p>
-            <ul class="actions">
-              <li><a href="https://youtu.be/Oj3GnDQc4yM" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-cinema reveal">
-          <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/E2drTQ__NbU/maxresdefault.jpg');"></div>
-          <div class="project-copy">
-            <span class="genre">Animated Fantasy Adventure</span>
-            <h2>VERONICA</h2>
-            <p>A folklore-inspired fantasy adventure about courage, humor, and bringing light back to a darkened kingdom.</p>
-            <ul class="actions">
-              <li><a href="https://youtu.be/E2drTQ__NbU" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="project-cinema reveal">
-          <div class="project-visual" style="background-image:url('https://img.youtube.com/vi/cXHl0L0x_MY/maxresdefault.jpg');"></div>
-          <div class="project-copy">
-            <span class="genre">Hardcore Action Animation</span>
-            <h2>PAGANS</h2>
-            <p>A visceral animated action concept with mythic stakes, brutal momentum, and serialized impact.</p>
-            <ul class="actions">
-              <li><a href="https://youtu.be/cXHl0L0x_MY" class="button primary" target="_blank" rel="noopener">Watch Trailer</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="acting" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Performance</span>
-            <h2>The director’s eye shaped by the actor’s instinct.</h2>
-          </header>
-
-          <div class="statement-body">
-            <p class="lead">
-              Johnny’s directing is shaped by decades of performance experience.
-            </p>
-
-            <p>
-              His acting background includes national commercial campaigns, regional Spanish and English-language spots, and narrative performance work. That perspective informs his directing style — especially his focus on trust, emotional truth, and giving actors space to discover authentic moments.
-            </p>
-
-            <ul class="actions">
-              <li><a href="https://imdb.me/johnnyolvera" class="button primary" target="_blank" rel="noopener">View IMDb</a></li>
-              <li><a href="https://youtu.be/t8nIq_HnDp4" class="button" target="_blank" rel="noopener">Watch Reel</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="philosophy" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Storytelling Philosophy</span>
-            <h2>Entertainment With Layers</h2>
-          </header>
-
-          <div class="statement-body">
-            <p class="lead">
-              I believe stories should welcome everyone.
-            </p>
-
-            <p>
-              Some audiences come for fun. Some come for emotion. Some come for tension, romance, spectacle, laughter, fear, or escape. My goal is never to separate those audiences — it is to invite all of them into the same experience.
-            </p>
-
-            <p class="philosophy-quote">
-              “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
-            </p>
-
-            <div class="principles">
-              <ul>
-                <li>Fun enough to invite everyone in</li>
-                <li>Human enough to make people feel seen</li>
-                <li>Layered enough to reward those who go deeper</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="statement" class="post cinematic-section reveal">
-          <header class="major">
-            <span class="eyebrow">Director’s Statement</span>
-            <h2>The Log Principle™</h2>
-          </header>
-
-          <div class="statement-body">
-            <p class="lead">
-              I direct from a simple belief: people are more capable than we give them credit for.
-            </p>
-
-            <p>
-              If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand. And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.
-            </p>
-
-            <p>
-              Because the moment you over-direct, over-explain, or over-control — you rob people of the opportunity to bring something real to the work. I assume competence.
-            </p>
-
-            <div class="principles">
-              <ul>
-                <li>Actors feel trusted, not managed</li>
-                <li>Collaborators take ownership</li>
-                <li>Performances become discoveries instead of instructions</li>
-              </ul>
-            </div>
-
-            <p>
-              <strong>Cross your own log — and bring something only you could have found.</strong>
-            </p>
-          </div>
-        </section>
-
-        <section class="post goldwood-final reveal">
-          <header class="major">
-            <span class="eyebrow">Goldwood Cinema</span>
-            <h2>Company Slate & Project Hub</h2>
-          </header>
-
-          <div class="statement-body">
-            <p>
-              For current film, television, animation, and emerging-format projects, visit Goldwood Cinema — the home of Johnny Olvera’s active development slate.
-            </p>
-
-            <ul class="actions special">
-              <li><a href="https://www.goldwoodcinema.com" class="button primary" target="_blank" rel="noopener">Visit Goldwood Cinema</a></li>
-            </ul>
-          </div>
-        </section>
-
-      </div>
-
-      <footer id="footer">
-        <section>
-          <h3>Professional Inquiries</h3>
-          <p>
-          </p>
-          <p>
-            <a href="mailto:johnny@goldwoodcinema.com">johnny@goldwoodcinema.com</a>
-          </p>
-        </section>
-
-        <section class="split contact">
-          <section class="alt">
-            <h3>Location</h3>
-            <p>Los Angeles, CA</p>
-          </section>
-
-          <section>
-            <h3>Phone</h3>
-            <p><a href="tel:+13105646572">(310) 564-6572</a></p>
-          </section>
-
-          <section>
-            <h3>Email</h3>
-            <p><a href="mailto:johnny@goldwoodcinema.com">johnny@goldwoodcinema.com</a></p>
-          </section>
-
-          <section>
-            <h3>Links</h3>
-            <p>
-              <a href="https://imdb.me/johnnyolvera" target="_blank" rel="noopener">IMDb</a><br />
-              <a href="https://www.linkedin.com/in/johnnyolvera/" target="_blank" rel="noopener">LinkedIn</a><br />
-              <a href="https://www.goldwoodcinema.com" target="_blank" rel="noopener">Goldwood Cinema</a>
-            </p>
-          </section>
-        </section>
-      </footer>
-
-      <div id="copyright">
-        <ul>
-          <li>&copy; Johnny Olvera / Goldwood Cinema LLC</li>
+        <ul class="actions">
+          <li><a href="https://imdb.me/johnnyolvera" class="button primary" target="_blank" rel="noopener">View IMDb</a></li>
+          <li><a href="https://youtu.be/t8nIq_HnDp4" class="button" target="_blank" rel="noopener">Watch Reel</a></li>
         </ul>
       </div>
+    </section>
 
-    </div>
+    <section id="philosophy" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Storytelling Philosophy</span>
+        <h2>Entertainment With Layers</h2>
+      </header>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <div class="statement-body">
+        <p class="lead">
+          I believe stories should welcome everyone.
+        </p>
 
-    <script>
-      const revealElements = document.querySelectorAll('.reveal');
+        <p>
+          Some audiences come for fun. Some come for emotion. Some come for tension, romance, spectacle, laughter, fear, or escape. My goal is never to separate those audiences — it is to invite all of them into the same experience.
+        </p>
 
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {
-        threshold: 0.15
-      });
+        <p class="philosophy-quote">
+          “If you want entertainment, you’ll be entertained. If you want meaning, there will always be more to find.”
+        </p>
 
-      revealElements.forEach(element => {
-        revealObserver.observe(element);
-      });
-    </script>
+        <div class="principles">
+          <ul>
+            <li>Fun enough to invite everyone in</li>
+            <li>Human enough to make people feel seen</li>
+            <li>Layered enough to reward those who go deeper</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="statement" class="post cinematic-section reveal">
+      <header class="major">
+        <span class="eyebrow">Director's Statement</span>
+        <h2>The Log Principle™</h2>
+      </header>
+
+      <div class="statement-body">
+        <p class="lead">
+          I direct from a simple belief: people are more capable than we give them credit for.
+        </p>
+
+        <p>
+          If there’s a log in the path, you cross it. You don’t wait to be carried, and you don’t expect someone to hold your hand. And when I’m working with actors and crew, I don’t rush in to solve something they’re fully capable of handling themselves.
+        </p>
+
+        <p>
+          Because the moment you over-direct, over-explain, or over-control, you rob people of the opportunity to bring something real to the work. I assume competence.
+        </p>
+
+        <div class="principles">
+          <ul>
+            <li>Actors feel trusted, not managed</li>
+            <li>Collaborators take ownership</li>
+            <li>Performances become discoveries instead of instructions</li>
+          </ul>
+        </div>
+
+        <p>
+          <strong>Cross your own log — and bring something only you could have found.</strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="post goldwood-final reveal">
+      <header class="major">
+        <span class="eyebrow">Goldwood Cinema</span>
+        <h2>Company Slate & Project Hub</h2>
+      </header>
+
+      <div class="statement-body">
+        <p>
+          For current film, television, animation, vertical series, and emerging-format projects, visit Goldwood Cinema — the home of Johnny Olvera's active development slate.
+        </p>
+
+        <ul class="actions special">
+          <li><a href="https://www.goldwoodcinema.com" class="button primary" target="_blank" rel="noopener">Visit Goldwood Cinema</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <footer id="footer">
+    <section>
+      <h3>Professional Inquiries</h3>
+      <p>
+        For producing, development, representation, directing, or project inquiries:
+      </p>
+      <p>
+        <a href="mailto:johnny@goldwoodcinema.com">johnny@goldwoodcinema.com</a>
+      </p>
+    </section>
+
+    <section class="split contact">
+      <section class="alt">
+        <h3>Location</h3>
+        <p>Los Angeles, CA</p>
+      </section>
+
+      <section>
+        <h3>Phone</h3>
+        <p><a href="tel:+13105646572">(310) 564-6572</a></p>
+      </section>
+
+      <section>
+        <h3>Email</h3>
+        <p><a href="mailto:johnny@goldwoodcinema.com">johnny@goldwoodcinema.com</a></p>
+      </section>
+
+      <section>
+        <h3>Links</h3>
+        <p>
+          <a href="https://imdb.me/johnnyolvera" target="_blank" rel="noopener">IMDb</a><br />
+          <a href="https://www.linkedin.com/in/johnnyolvera/" target="_blank" rel="noopener">LinkedIn</a><br />
+          <a href="https://www.goldwoodcinema.com" target="_blank" rel="noopener">Goldwood Cinema</a>
+        </p>
+      </section>
+    </section>
+  </footer>
+
+  <div id="copyright">
+    <ul>
+      <li>&copy; Johnny Olvera / Goldwood Cinema LLC</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  revealElements.forEach(element => {
+    revealObserver.observe(element);
+  });
+</script>
+```
+
   </body>
 </html>
