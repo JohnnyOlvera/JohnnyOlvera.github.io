@@ -713,12 +713,24 @@
       transform: scale(1.018);
     }
 
-    .laurel {
-      position: absolute;
-      right: clamp(1rem, 2vw, 2rem);
-      bottom: clamp(1rem, 2vw, 2rem);
-      width: clamp(115px, 16vw, 210px);
-      filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.65));
+    .warren-award {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0.25rem 0 1.9rem;
+      padding: 0.9rem 0;
+      border-top: 1px solid var(--line-strong);
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .warren-award-laurel {
+      display: block;
+      width: clamp(220px, 22vw, 330px);
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0.55rem 0.9rem rgba(0, 0, 0, 0.42));
     }
 
     .warren-copy h2 {
@@ -1556,8 +1568,13 @@
         text-align: left;
       }
 
-      .laurel {
-        width: 100px;
+      .warren-award {
+        width: 100%;
+        margin-bottom: 1.6rem;
+      }
+
+      .warren-award-laurel {
+        width: min(280px, 100%);
       }
 
       .contact-email {
@@ -1590,6 +1607,7 @@
 </head>
 
 <body>
+  <!-- JohnnyOlvera.com redesign build: 2026-07-28 -->
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header" id="site-header">
@@ -1688,13 +1706,17 @@
         <div class="warren-layout">
           <div class="warren-visual mask-reveal">
             <img src="images/the-warren-feature.jpg" alt="Cinematic still from The Warren" loading="lazy" />
-            <img class="laurel" src="images/the-warren-laurel.png" alt="Official Nominee, SAG-AFTRA American Scene Awards" loading="lazy" />
           </div>
 
           <div class="warren-copy reveal">
             <p class="section-kicker">Selected Work</p>
             <h2 id="warren-title">The Warren</h2>
             <p class="project-byline">A feature film written and directed by Johnny Olvera.</p>
+
+            <div class="warren-award" aria-label="Official Nominee, 2025 SAG-AFTRA American Scene Awards">
+              <img class="warren-award-laurel" src="images/the-warren-laurel.png" alt="Official Nominee, 2025 SAG-AFTRA American Scene Awards" loading="lazy" />
+            </div>
+
             <p>Shot across more than 30 locations in three days, <strong>THE WARREN</strong> is a neo-noir mystery constructed through five shifting points of view and staged with a theatrical, long-take visual language.</p>
             <p>Made for $3,200, the film reflects the principle at the center of my work: cinematic ambition does not begin with resources. It begins with preparation, clarity and control.</p>
 
