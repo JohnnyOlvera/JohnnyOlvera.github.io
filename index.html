@@ -1,40 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Johnny Olvera | The Producer’s Director</title>
-  <meta name="description" content="Johnny Olvera is a Los Angeles–based writer and director whose work combines performance, visual language, and production discipline. The Producer’s Director." />
-  <meta name="theme-color" content="#080808" />
-  <meta name="color-scheme" content="dark" />
-  <link rel="canonical" href="https://johnnyolvera.com/" />
+<title>Goldwood Cinema | Original Film &amp; Television</title>
+<meta name="description" content="Goldwood Cinema develops original film and television properties through story architecture, screenplay development, visual strategy, packaging, and production-minded execution.">
+<meta name="theme-color" content="#050505">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Johnny Olvera | The Producer’s Director" />
-  <meta property="og:description" content="Creative Vision. Production Discipline." />
-  <meta property="og:url" content="https://johnnyolvera.com/" />
-  <meta property="og:image" content="https://johnnyolvera.com/images/johnny-olvera-hero.jpg" />
-  <meta property="og:image:alt" content="Johnny Olvera, writer and director" />
+<link rel="canonical" href="https://www.goldwoodcinema.com/">
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Johnny Olvera | The Producer’s Director" />
-  <meta name="twitter:description" content="Creative Vision. Production Discipline." />
-  <meta name="twitter:image" content="https://johnnyolvera.com/images/johnny-olvera-hero.jpg" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Goldwood Cinema | Original Film &amp; Television">
+<meta property="og:description" content="Original stories developed through story architecture, screenplay, visual strategy, packaging, and production-minded execution.">
+<meta property="og:url" content="https://www.goldwoodcinema.com/">
+<meta property="og:image" content="https://www.goldwoodcinema.com/images/goldwood-cinema-hero.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <noscript><style>.reveal,.mask-reveal{opacity:1!important;transform:none!important;clip-path:none!important}</style></noscript>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Goldwood Cinema | Original Film &amp; Television">
+<meta name="twitter:description" content="Ideas become productions.">
+<meta name="twitter:image" content="https://www.goldwoodcinema.com/images/goldwood-cinema-hero.png">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Johnny Olvera",
-    "url": "https://johnnyolvera.com/",
-    "image": "https://johnnyolvera.com/images/johnny-olvera-portrait.jpg",
-    "jobTitle": "Writer and Director",
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#050505;
+  --charcoal:#0b0b0b;
+  --panel:#111111;
+  --gold:#c9a45c;
+  --gold-light:#f1d28a;
+  --cream:#f4efe4;
+  --muted:#b8b0a4;
+  --line:rgba(201,164,92,.26);
+  --line-strong:rgba(241,210,138,.5);
+  --shadow:0 34px 90px rgba(0,0,0,.55);
+  --serif:'Cinzel',Georgia,serif;
+  --sans:'Inter',Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  font-family:var(--sans);
+  background:radial-gradient(circle at 8% 0%,rgba(201,164,92,.1),transparent 26rem),
+             linear-gradient(180deg,var(--black),var(--charcoal) 46%,var(--black));
+  color:var(--cream);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+body.modal-open{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+::selection{background:var(--gold);color:var(--black)}
+.container{width:min(1200px,92%);margin-inline:auto}
+.skip-link{
+  position:fixed;top:12px;left:12px;z-index:500;padding:10px 14px;
+  background:var(--gold-light);color:var(--black);font-weight:800;
+  transform:translateY(-160%);transition:transform .2s ease
+}
+.skip-link:focus{transform:translateY(0)}
+
+.site-header{
+  position:fixed;inset:0 0 auto;z-index:100;
+  border-bottom:1px solid transparent;
+  background:linear-gradient(180deg,rgba(5,5,5,.86),rgba(5,5,5,.2));
+  transition:.25s ease
+}
+.site-header.scrolled{
+  background:rgba(5,5,5,.94);backdrop-filter:blur(14px);
+  border-color:rgba(201,164,92,.2);box-shadow:0 10px 35px rgba(0,0,0,.25)
+}
+.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{
+  display:inline-flex;flex-direction:column;font-family:var(--serif);
+  text-transform:uppercase;letter-spacing:.19em;color:var(--gold-light);
+  line-height:1.1;white-space:nowrap
+}
+.brand strong{font-size:1rem;font-weight:600}
+.brand span{font-family:var(--sans);font-size:.58rem;font-weight:600;letter-spacing:.38em;margin-top:6px;color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{
+  position:relative;display:inline-block;padding:12px 0;font-size:.72rem;
+  font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:#d2cabd
+}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold-light)}
+.menu-toggle{
+  display:none;width:46px;height:42px;border:1px solid var(--line);
+  background:rgba(0,0,0,.35);cursor:pointer;position:relative
+}
+.menu-toggle span,.menu-toggle::before,.menu-toggle::after{
+  content:"";position:absolute;left:12px;right:12px;height:1px;background:var(--cream);transition:.25s ease
+}
+.menu-toggle::before{top:13px}.menu-toggle span{top:20px}.menu-toggle::after{top:27px}
+.menu-toggle[aria-expanded="true"]::before{top:20px;transform:rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span{opacity:0}
+.menu-toggle[aria-expanded="true"]::after{top:20px;transform:rotate(-45deg)}
+
+.hero{
+  min-height:100svh;display:flex;align-items:center;position:relative;isolation:isolate;
+  overflow:hidden;padding:150px 0 92px;background:#050505
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background-image:
+    linear-gradient(90deg,rgba(5,5,5,.98) 0%,rgba(5,5,5,.95) 26%,rgba(5,5,5,.74) 51%,rgba(5,5,5,.2) 100%),
+    linear-gradient(180deg,rgba(5,5,5,.18),rgba(5,5,5,.2) 67%,rgba(5,5,5,1) 100%),
+    url("images/goldwood-cinema-hero.png");
+  background-size:cover;background-position:center;filter:saturate(.86) contrast(1.04)
+}
+.hero-content{max-width:780px}
+.eyebrow,.section-kicker{font-size:.72rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-light)}
+.eyebrow{margin-bottom:26px}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(3.65rem,8.6vw,8.25rem);
+  font-weight:600;line-height:.92;text-wrap:balance
+}
+.hero-copy{max-width:700px;margin-top:30px;font-size:clamp(1.03rem,1.6vw,1.26rem);color:#ddd5c8}
+.hero-founder{margin-top:20px;color:var(--gold-light)}
+.hero-categories{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:28px;color:#d2c9bb;font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+
+.buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}
+.button,.text-link{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;
+  padding:13px 21px;border-radius:1px;border:1px solid rgba(201,164,92,.5);
+  background:rgba(0,0,0,.24);color:var(--gold-light);font-size:.7rem;
+  font-weight:800;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:.2s ease
+}
+.button::after,.text-link::after{content:"→";font-size:1rem}
+.button:hover,.button:focus-visible,.text-link:hover,.text-link:focus-visible{
+  transform:translateY(-2px);border-color:var(--gold-light);box-shadow:0 15px 38px rgba(201,164,92,.16)
+}
+.button.primary{background:linear-gradient(135deg,var(--gold-light),var(--gold));border-color:transparent;color:#080808}
+.button.quiet{border-color:rgba(255,255,255,.18);color:#d8d0c4}
+.button.play-button::before{content:"▶";font-size:.85rem}
+.button.play-button::after{display:none}
+.text-link{min-height:auto;padding:0;border:none;background:transparent;font-size:.66rem}
+
+section{padding:118px 0;position:relative}
+.section-kicker{margin-bottom:17px}
+.section-title{
+  max-width:980px;font-family:var(--serif);font-size:clamp(2.35rem,5.4vw,5.25rem);
+  font-weight:600;line-height:1.04;text-wrap:balance
+}
+.section-intro{max-width:850px;margin-top:24px;font-size:clamp(1rem,1.55vw,1.18rem);color:#d4ccbf}
+
+.slate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:54px}
+.project-card{
+  position:relative;min-height:590px;overflow:hidden;border:1px solid var(--line);
+  background:var(--panel);box-shadow:0 18px 55px rgba(0,0,0,.2);isolation:isolate;transition:.3s ease
+}
+.project-card.featured{grid-column:1/-1;min-height:670px}
+.project-card:hover{transform:translateY(-5px);border-color:var(--line-strong);box-shadow:var(--shadow)}
+.project-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;z-index:-2;transition:.55s ease}
+.project-card:hover img{transform:scale(1.035)}
+.project-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(0,0,0,.03) 28%,rgba(0,0,0,.36) 54%,rgba(0,0,0,.97) 100%),
+             linear-gradient(90deg,rgba(0,0,0,.35),transparent 62%)
+}
+.project-card.featured::after{
+  background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.65) 40%,rgba(0,0,0,.16) 78%),
+             linear-gradient(180deg,transparent 45%,rgba(0,0,0,.85) 100%)
+}
+.project-content{position:absolute;inset:auto 0 0;padding:34px}
+.project-card.featured .project-content{max-width:760px;padding:52px}
+.project-meta,.library-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tag{
+  display:inline-flex;padding:5px 9px;border:1px solid rgba(241,210,138,.36);
+  background:rgba(0,0,0,.4);color:var(--gold-light);font-size:.61rem;font-weight:800;
+  letter-spacing:.13em;text-transform:uppercase
+}
+.project-content h3{font-family:var(--serif);font-size:clamp(1.75rem,3vw,3.05rem);line-height:1.05;margin-bottom:13px}
+.project-card.featured .project-content h3{font-size:clamp(2.75rem,5vw,5rem)}
+.project-content p{max-width:730px;color:#e0d8cc;font-size:.95rem;line-height:1.65;margin-bottom:22px}
+
+.proof,.library{background:#080808;border-top:1px solid rgba(201,164,92,.14);border-bottom:1px solid rgba(201,164,92,.14)}
+.proof-grid,.about-grid{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:72px;align-items:center}
+.proof-poster{position:relative;max-width:455px;margin-inline:auto}
+.proof-poster img{width:100%;border:1px solid rgba(255,255,255,.15);box-shadow:var(--shadow)}
+.proof-copy p,.about-copy p{margin-top:20px;color:#d6cec1}
+.proof-quote{margin:32px 0 0;padding:22px 0 22px 24px;border-left:2px solid var(--gold);font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2.35rem)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:34px}
+.stat{padding:19px;border:1px solid rgba(201,164,92,.18);background:rgba(255,255,255,.025)}
+.stat strong{display:block;font-family:var(--serif);font-size:1.45rem;color:var(--gold-light)}
+.stat span{font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.approach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:55px;border-block:1px solid var(--line)}
+.approach-item{padding:34px 28px;border-right:1px solid var(--line)}
+.approach-item:last-child{border-right:none}
+.approach-number{display:block;font-family:var(--serif);font-size:2.6rem;color:rgba(241,210,138,.55);margin-bottom:27px}
+.approach-item h3{font-family:var(--serif);color:var(--gold-light);margin-bottom:14px}
+.approach-item p{color:#cfc7ba}
+.taste-quote{max-width:900px;margin:58px auto 0;text-align:center;font-family:var(--serif);font-size:clamp(1.7rem,3.5vw,3.25rem)}
+.approach-cta{display:flex;justify-content:center;margin-top:34px}
+
+.library-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:52px}
+.library-card{position:relative;min-height:510px;display:flex;align-items:flex-end;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.library-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.library-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 34%,rgba(0,0,0,.95) 100%)}
+.library-content{position:relative;z-index:2;padding:27px;width:100%}
+.library-content h3{font-family:var(--serif);font-size:1.46rem;margin-bottom:10px}
+.library-content p{color:#d7cfc2;font-size:.89rem}
+
+.about-portrait{position:relative;min-height:680px;overflow:hidden;border:1px solid var(--line);background:#101010;box-shadow:var(--shadow)}
+.about-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.credential-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:34px}
+.credential{padding:19px;border:1px solid rgba(201,164,92,.18);background:rgba(255,255,255,.025)}
+.credential strong{display:block;font-family:var(--serif);color:var(--gold-light)}
+.credential span{font-size:.63rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.signature-line{margin-top:34px;font-family:var(--serif);font-size:1.45rem}
+
+.reel{padding:0}
+.reel-panel{min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden;border-block:1px solid var(--line)}
+.reel-panel::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background-image:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.62) 45%,rgba(0,0,0,.22)),
+                   linear-gradient(180deg,rgba(0,0,0,.14),rgba(0,0,0,.82)),
+                   url("images/goldwood-cinema-hero.png");
+  background-size:cover;background-position:center
+}
+.play-orb{
+  width:90px;height:90px;margin-bottom:30px;display:grid;place-items:center;border-radius:50%;
+  border:1px solid rgba(241,210,138,.58);background:rgba(0,0,0,.35);color:var(--gold-light);
+  font-size:1.45rem;cursor:pointer
+}
+
+.contact{text-align:center;background:radial-gradient(circle at center,rgba(201,164,92,.13),transparent 26rem)}
+.contact .section-title,.contact .section-intro{margin-inline:auto}
+.contact .buttons{justify-content:center}
+.contact-brand{margin-top:70px;padding-top:30px;border-top:1px solid var(--line);font-family:var(--serif);color:var(--gold-light)}
+
+.site-footer{padding:46px 0;border-top:1px solid rgba(201,164,92,.16);background:#030303}
+.footer-layout{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.footer-copy{font-size:.72rem;color:rgba(244,239,228,.53)}
+.footer-links{display:flex;flex-wrap:wrap;gap:16px;list-style:none}
+.footer-links a{font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+
+.modal{
+  position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(0,0,0,.9);backdrop-filter:blur(11px)
+}
+.modal.active{display:flex}
+.modal-shell{position:relative;width:min(1060px,96vw);max-height:92vh;overflow:auto;border:1px solid rgba(241,210,138,.42);background:#090909;box-shadow:0 36px 130px rgba(0,0,0,.85)}
+.modal-close{position:absolute;top:14px;right:14px;z-index:3;width:42px;height:42px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.72);cursor:pointer}
+.video-frame{width:100%;aspect-ratio:16/9;background:#000}
+.video-frame iframe{width:100%;height:100%;border:0}
+.project-modal-layout{display:grid;grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);min-height:650px}
+.project-modal-image{min-height:650px;background:#111}
+.project-modal-image img{width:100%;height:100%;object-fit:cover}
+.project-modal-copy{padding:65px 54px 48px;display:flex;flex-direction:column;justify-content:center}
+.project-modal-copy h2{font-family:var(--serif);font-size:clamp(2rem,4.5vw,4.25rem);line-height:1.04;margin-top:14px}
+.project-modal-copy p{margin-top:24px;color:#d6cec1}
+.modal-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.reveal.visible{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px}
+
+@media(max-width:1040px){
+  .proof-grid,.about-grid{grid-template-columns:1fr}
+  .approach-grid{grid-template-columns:repeat(2,1fr)}
+  .library-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:820px){
+  .menu-toggle{display:block}
+  .nav-links{
+    position:absolute;top:74px;left:0;right:0;display:grid;gap:0;padding:10px 4%;
+    background:rgba(5,5,5,.98);transform:translateY(-130%);opacity:0;pointer-events:none;transition:.28s ease
+  }
+  .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto}
+  .slate-grid{grid-template-columns:1fr}
+  .project-card.featured{grid-column:auto}
+  .project-modal-layout{grid-template-columns:1fr}
+  .project-modal-image{min-height:430px}
+}
+@media(max-width:640px){
+  section{padding:88px 0}
+  .hero{padding-top:132px}
+  .buttons{flex-direction:column}
+  .button{width:100%}
+  .project-card,.project-card.featured{min-height:540px}
+  .project-content,.project-card.featured .project-content{padding:26px}
+  .stat-grid,.approach-grid,.library-grid,.credential-grid{grid-template-columns:1fr}
+  .approach-item{border-right:none;border-bottom:1px solid var(--line)}
+  .about-portrait{min-height:540px}
+  .footer-layout{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Goldwood Cinema home">
+      <strong>Goldwood Cinema</strong>
+      <span>Original Film &amp; Television</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation"><span></span></button>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="#slate">Slate</a></li>
+        <li><a href="#warren">The Warren</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-content reveal">
+      <p class="eyebrow">Original Film &amp; Television</p>
+      <h1>Ideas Become Productions.</h1>
+      <p class="hero-copy">Goldwood Cinema develops original entertainment properties through story architecture, screenplay, visual strategy, packaging, and production-minded execution.</p>
+      <p class="hero-founder">Founded by writer-director Johnny Olvera.</p>
+      <div class="hero-categories">
+        <span>Original IP</span><span>Feature Films</span><span>Television</span><span>Animation</span><span>Premium Vertical Series</span>
+      </div>
+      <div class="buttons">
+        <a class="button primary" href="#slate">Explore the Slate</a>
+        <a class="button" href="#warren">View Proof of Execution</a>
+        <a class="button quiet" href="development.html">Development &amp; Packaging</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="active-slate" id="slate">
+  <div class="container">
+    <p class="section-kicker reveal">The Active Slate</p>
+    <h2 class="section-title reveal">Five projects. Five paths to production.</h2>
+    <p class="section-intro reveal">Goldwood Cinema maintains a focused slate of original film and television properties, each developed with a distinct audience, production model, and path to market.</p>
+
+    <div class="slate-grid">
+      <article class="project-card featured reveal">
+        <img src="images/sage-of-rage-poster.png" alt="SAGE OF RAGE feature film poster">
+        <div class="project-content">
+          <div class="project-meta"><span class="tag">Flagship Feature</span><span class="tag">Grounded Sports Drama</span></div>
+          <h3>SAGE OF RAGE</h3>
+          <p>A professional MMA fighter risks his body, identity, and future to provide for the young daughter who gives every round meaning.</p>
+          <button class="text-link project-trigger" type="button"
+            data-title="SAGE OF RAGE"
+            data-meta="Feature Film · Grounded Sports Drama"
+            data-description="A professional MMA fighter risks his body, identity, and future to provide for the young daughter who gives every round meaning."
+            data-image="images/sage-of-rage-poster.png"
+            data-video="">View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="images/ice-maiden-poster.png" alt="ICE MAIDEN feature film poster" loading="lazy">
+        <div class="project-content">
+          <div class="project-meta"><span class="tag">Feature Film</span><span class="tag">Psychological Thriller</span></div>
+          <h3>ICE MAIDEN</h3>
+          <p>A contained psychological detective thriller about a dangerous confrontation between an investigator and a woman whose secrets may be more calculated than they appear.</p>
+          <button class="text-link project-trigger" type="button"
+            data-title="ICE MAIDEN"
+            data-meta="Feature Film · Psychological Detective Thriller"
+            data-description="A contained psychological detective thriller about a dangerous confrontation between an investigator and a woman whose secrets may be more calculated than they appear."
+            data-image="images/ice-maiden-poster.png"
+            data-video="RBFohZAoOpU">View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="images/mob-squad-poster.png" alt="MOB SQUAD feature film poster" loading="lazy">
+        <div class="project-content">
+          <div class="project-meta"><span class="tag">Feature Film</span><span class="tag">WWII Action</span></div>
+          <h3>MOB SQUAD</h3>
+          <p>During World War II, the OSS recruits a crew of American mobsters for a covert mission no conventional military unit could survive.</p>
+          <button class="text-link project-trigger" type="button"
+            data-title="MOB SQUAD"
+            data-meta="Feature Film · WWII Action"
+            data-description="During World War II, the OSS recruits a crew of American mobsters for a covert mission no conventional military unit could survive."
+            data-image="images/mob-squad-poster.png"
+            data-video="Oj3GnDQc4yM">View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="images/pagans-poster.png" alt="PAGANS television series poster" loading="lazy">
+        <div class="project-content">
+          <div class="project-meta"><span class="tag">Television Series</span><span class="tag">Science-Fiction Adventure</span></div>
+          <h3>PAGANS</h3>
+          <p>Graduates of an alien academy are sent to protect Earth while the United States government conceals the truth about who—and what—is already here.</p>
+          <button class="text-link project-trigger" type="button"
+            data-title="PAGANS"
+            data-meta="Television Series · Science-Fiction Adventure"
+            data-description="Graduates of an alien academy are sent to protect Earth while the United States government conceals the truth about who—and what—is already here."
+            data-image="images/pagans-poster.png"
+            data-video="cXHl0L0x_MY">View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="images/before-we-meet-again-poster.png" alt="BEFORE WE MEET AGAIN feature film poster" loading="lazy">
+        <div class="project-content">
+          <div class="project-meta"><span class="tag">Feature Film</span><span class="tag">Science-Fiction Romance</span></div>
+          <h3>BEFORE WE MEET AGAIN</h3>
+          <p>A famous relationship podcaster determined to prove love is nothing more than biology agrees to a seven-day experiment—only to discover the man she’s studying may be the first person to truly see her.</p>
+          <button class="text-link project-trigger" type="button"
+            data-title="BEFORE WE MEET AGAIN"
+            data-meta="Feature Film · Science-Fiction Romance"
+            data-description="A famous relationship podcaster determined to prove love is nothing more than biology agrees to a seven-day experiment—only to discover the man she’s studying may be the first person to truly see her."
+            data-image="images/before-we-meet-again-poster.png"
+            data-video="qE-mvcEAWrc">View Project</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="proof" id="warren">
+  <div class="container proof-grid">
+    <div class="proof-poster reveal"><img src="images/the-warren-poster.png" alt="THE WARREN released feature film poster" loading="lazy"></div>
+    <div class="proof-copy reveal">
+      <p class="section-kicker">Proof of Execution</p>
+      <h2 class="section-title">One screenplay. Three shoot days. A finished feature.</h2>
+      <p>Written and directed by Johnny Olvera, THE WARREN is a neo-noir detective mystery produced for $3,200 across more than 30 locations in three principal photography days.</p>
+      <p>The film demonstrates the preparation, visual discipline, production awareness, and resourcefulness behind every Goldwood Cinema property.</p>
+      <blockquote class="proof-quote">A finished film is the case study.</blockquote>
+      <div class="stat-grid">
+        <div class="stat"><strong>$3,200</strong><span>Production Budget</span></div>
+        <div class="stat"><strong>30+</strong><span>Locations</span></div>
+        <div class="stat"><strong>3</strong><span>Shoot Days</span></div>
+        <div class="stat"><strong>Released</strong><span>Feature Film</span></div>
+        <div class="stat"><strong>Official Nominee</strong><span>SAG-AFTRA American Scene Awards</span></div>
+        <div class="stat"><strong>Tubi</strong><span>Streaming Release</span></div>
+      </div>
+      <div class="buttons">
+        <a class="button primary" href="https://tubitv.com/movies/100047968/the-warren" target="_blank" rel="noopener noreferrer">Watch on Tubi</a>
+        <a class="button" href="the-warren.html">View the Case Study</a>
+        <button class="button quiet play-button video-trigger" type="button" data-video="lr25jL8Ihcc">Watch Trailer</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="approach" id="approach">
+  <div class="container">
+    <p class="section-kicker reveal">The Goldwood Approach</p>
+    <h2 class="section-title reveal">Built for the page. Developed for production.</h2>
+    <p class="section-intro reveal">Goldwood Cinema develops original properties with equal attention to story, audience, visual identity, and the realities of production.</p>
+    <div class="approach-grid reveal">
+      <article class="approach-item"><span class="approach-number">01</span><h3>Story Architecture</h3><p>Concept, character, structure, world, and theme are built before presentation begins.</p></article>
+      <article class="approach-item"><span class="approach-number">02</span><h3>Screenplay Development</h3><p>Each story is developed for the demands of its format, genre, audience, and production model.</p></article>
+      <article class="approach-item"><span class="approach-number">03</span><h3>Visual Strategy</h3><p>Tone, imagery, design, and cinematic language establish a clear identity before the first frame is photographed.</p></article>
+      <article class="approach-item"><span class="approach-number">04</span><h3>Production Intelligence</h3><p>Creative decisions are evaluated through schedule, performance, logistics, coverage, and editorial practicality.</p></article>
+    </div>
+    <p class="taste-quote reveal">Style is what people see. Taste is what people trust.</p>
+    <div class="approach-cta reveal"><a class="button primary" href="development.html">Explore Development &amp; Packaging</a></div>
+  </div>
+</section>
+
+<section class="library" id="library">
+  <div class="container">
+    <p class="section-kicker reveal">Selected Development Library</p>
+    <h2 class="section-title reveal">Original stories beyond the active slate.</h2>
+    <p class="section-intro reveal">Goldwood Cinema maintains a growing library of original properties across feature film, animation, television, and premium vertical storytelling.</p>
+    <div class="library-grid">
+      <article class="library-card reveal"><img src="images/billionaires-best-man-poster.png" alt="THE BILLIONAIRE'S BEST MAN vertical series poster"><div class="library-content"><div class="library-meta"><span class="tag">Premium Vertical Series</span><span class="tag">Romance Mystery</span></div><h3>THE BILLIONAIRE’S BEST MAN</h3><p>A polished romance-mystery series developed for premium serialized viewing.</p></div></article>
+      <article class="library-card reveal"><img src="images/veronica-poster.png" alt="VERONICA animated family feature poster"><div class="library-content"><div class="library-meta"><span class="tag">Animated Family Feature</span><span class="tag">Fantasy Adventure</span></div><h3>VERONICA</h3><p>A spirited young heroine enters a world of folklore, danger, humor, and magic in an animated adventure inspired by <em>The Laughing Prince</em>.</p></div></article>
+      <article class="library-card reveal"><img src="images/new-sheriff-in-town-poster.png" alt="THE NEW SHERIFF IN TOWN vertical action western poster"><div class="library-content"><div class="library-meta"><span class="tag">Premium Vertical Series</span><span class="tag">Action Western</span></div><h3>THE NEW SHERIFF IN TOWN</h3><p>A newly appointed sheriff confronts the ruthless power controlling Black Ridge County.</p></div></article>
+      <article class="library-card reveal"><img src="images/museum-of-emma-poster.png" alt="MUSEUM OF EMMA premium vertical romantic comedy poster"><div class="library-content"><div class="library-meta"><span class="tag">Premium Vertical Series</span><span class="tag">Romantic Comedy</span></div><h3>MUSEUM OF EMMA</h3><p>She forgot him. He never forgot her.</p></div></article>
+      <article class="library-card reveal"><img src="images/information-society-poster.png" alt="INFORMATION SOCIETY science-fiction feature poster"><div class="library-content"><div class="library-meta"><span class="tag">Feature Film</span><span class="tag">Science-Fiction Thriller</span></div><h3>INFORMATION SOCIETY</h3><p>An original science-fiction feature currently in development.</p></div></article>
+      <article class="library-card reveal"><img src="images/the-olympians-poster.png" alt="THE OLYMPIANS science-fiction television series poster"><div class="library-content"><div class="library-meta"><span class="tag">Television Series</span><span class="tag">Science-Fiction Adventure</span></div><h3>THE OLYMPIANS</h3><p>Modern scientists enter an alternate dimension resembling the ancient Mediterranean and become the forgotten origin of humanity’s greatest myths.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-portrait reveal"><img src="images/johnny-olvera-headshot.png" alt="Johnny Olvera, founder and creative lead of Goldwood Cinema"></div>
+    <div class="about-copy reveal">
+      <p class="section-kicker">Founder &amp; Creative Lead</p>
+      <h2 class="section-title">The Producer’s Director.</h2>
+      <p>Goldwood Cinema was founded by writer-director Johnny Olvera, whose approach combines creative vision with the discipline, preparation, and practical awareness required to bring ambitious stories to the screen.</p>
+      <p>With more than 30 years of experience as a SAG-AFTRA actor and 12 years working in script supervision, Olvera develops projects from both sides of production.</p>
+      <p>He wrote and directed THE WARREN, a feature-length neo-noir mystery produced for $3,200 across more than 30 locations in three principal photography days.</p>
+      <div class="credential-grid">
+        <div class="credential"><strong>30+ Years</strong><span>SAG-AFTRA</span></div>
+        <div class="credential"><strong>12 Years</strong><span>Script Supervision</span></div>
+        <div class="credential"><strong>Writer-Director</strong><span>THE WARREN</span></div>
+        <div class="credential"><strong>Official Nominee</strong><span>American Scene Awards</span></div>
+      </div>
+      <p class="signature-line">Creative Vision. Production Discipline.</p>
+      <div class="buttons">
+        <button class="button primary video-trigger" type="button" data-video="t8nIq_HnDp4">View Director Reel</button>
+        <a class="button quiet" href="https://imdb.me/johnnyolvera" target="_blank" rel="noopener noreferrer">View IMDb</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reel" id="reel">
+  <div class="reel-panel">
+    <div class="container">
+      <div class="reel-content reveal">
+        <button class="play-orb video-trigger" type="button" data-video="t8nIq_HnDp4" aria-label="Play Director Reel">▶</button>
+        <p class="section-kicker">Director Reel</p>
+        <h2 class="section-title">Performance. Visual language. Execution.</h2>
+        <p class="section-intro">A selection of Johnny Olvera’s directing work, focused on cinematic storytelling, actor-driven performance, and production-minded execution.</p>
+        <div class="buttons"><button class="button primary video-trigger" type="button" data-video="t8nIq_HnDp4">Watch Director Reel</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container reveal">
+    <p class="section-kicker">Start a Conversation</p>
+    <h2 class="section-title">Stories move forward through the right partnerships.</h2>
+    <p class="section-intro">Goldwood Cinema welcomes conversations with producers, financiers, representatives, talent, and creative partners interested in developing and producing original film and television properties.</p>
+    <div class="buttons">
+      <a class="button primary" href="mailto:johnny@goldwoodcinema.com">Contact Johnny Olvera</a>
+      <a class="button" href="https://imdb.me/johnnyolvera" target="_blank" rel="noopener noreferrer">View IMDb</a>
+      <a class="button quiet" href="development.html">Explore Development &amp; Packaging</a>
+    </div>
+    <p class="contact-brand">Goldwood Cinema<br><span>Original stories. Production-minded execution.</span></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-layout">
+    <p class="footer-copy">© 2026 Goldwood Cinema. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#slate">Active Slate</a></li>
+      <li><a href="#warren">The Warren</a></li>
+      <li><a href="development.html">Development</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reel">Director Reel</a></li>
+      <li><a href="https://imdb.me/johnnyolvera" target="_blank" rel="noopener noreferrer">IMDb</a></li>
+      <li><a href="mailto:johnny@goldwoodcinema.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-shell">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close video">✕</button>
+    <div class="video-frame" id="videoFrame"></div>
+  </div>
+</div>
+
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="projectModalTitle">
+  <div class="modal-shell">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close project">✕</button>
+    <div class="project-modal-layout">
+      <div class="project-modal-image"><img id="projectModalImage" src="" alt=""></div>
+      <div class="project-modal-copy">
+        <div class="project-meta"><span class="tag" id="projectModalMeta"></span></div>
+        <h2 id="projectModalTitle"></h2>
+        <p id="projectModalDescription"></p>
+        <div class="modal-actions">
+          <a class="button primary" id="projectRequestLink" href="mailto:johnny@goldwoodcinema.com">Request Materials</a>
+          <button class="button quiet play-button" id="projectTrailerButton" type="button" hidden>Watch Trailer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const body = document.body;
+  const siteHeader = document.getElementById('siteHeader');
+  const menuToggle = document.getElementById('menuToggle');
+  const primaryNav = document.getElementById('primaryNav');
+  const videoModal = document.getElementById('videoModal');
+  const projectModal = document.getElementById('projectModal');
+  const videoFrame = document.getElementById('videoFrame');
+  const projectModalTitle = document.getElementById('projectModalTitle');
+  const projectModalMeta = document.getElementById('projectModalMeta');
+  const projectModalDescription = document.getElementById('projectModalDescription');
+  const projectModalImage = document.getElementById('projectModalImage');
+  const projectRequestLink = document.getElementById('projectRequestLink');
+  const projectTrailerButton = document.getElementById('projectTrailerButton');
+  let lastFocusedElement = null;
+
+  window.addEventListener('scroll', () => {
+    siteHeader.classList.toggle('scrolled', window.scrollY > 24);
+  }, { passive: true });
+
+  menuToggle.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    primaryNav.classList.toggle('open', !open);
+  });
+
+  primaryNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    menuToggle.setAttribute('aria-expanded', 'false');
+    primaryNav.classList.remove('open');
+  }));
+
+  const openModal = modal => {
+    lastFocusedElement = document.activeElement;
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    body.classList.add('modal-open');
+    const closeButton = modal.querySelector('[data-close-modal]');
+    if (closeButton) closeButton.focus();
+  };
+
+  const closeModal = modal => {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    body.classList.remove('modal-open');
+    if (modal === videoModal) videoFrame.innerHTML = '';
+    if (lastFocusedElement) lastFocusedElement.focus();
+  };
+
+  const openVideo = videoId => {
+    if (!videoId) return;
+    videoFrame.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    openModal(videoModal);
+  };
+
+  document.querySelectorAll('.video-trigger').forEach(button => {
+    button.addEventListener('click', () => openVideo(button.dataset.video));
+  });
+
+  document.querySelectorAll('.project-trigger').forEach(button => {
+    button.addEventListener('click', () => {
+      const title = button.dataset.title || '';
+      const meta = button.dataset.meta || '';
+      const description = button.dataset.description || '';
+      const image = button.dataset.image || '';
+      const video = button.dataset.video || '';
+
+      projectModalTitle.textContent = title;
+      projectModalMeta.textContent = meta;
+      projectModalDescription.textContent = description;
+      projectModalImage.src = image;
+      projectModalImage.alt = `${title} poster`;
+      projectRequestLink.href = `mailto:johnny@goldwoodcinema.com?subject=${encodeURIComponent(title + ' — Materials Request')}`;
+
+      if (video) {
+        projectTrailerButton.hidden = false;
+        projectTrailerButton.dataset.video = video;
+      } else {
+        projectTrailerButton.hidden = true;
+        projectTrailerButton.dataset.video = '';
+      }
+
+      openModal(projectModal);
+    });
+  });
+
+  projectTrailerButton.addEventListener('click', () => {
+    const videoId = projectTrailerButton.dataset.video;
+    closeModal(projectModal);
+    window.setTimeout(() => openVideo(videoId), 120);
+  });
+
+  document.querySelectorAll('[data-close-modal]').forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      if (modal) closeModal(modal);
+    });
+  });
+
+  [videoModal, projectModal].forEach(modal => {
+    modal.addEventListener('click', event => {
+      if (event.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      if (videoModal.classList.contains('active')) closeModal(videoModal);
+      if (projectModal.classList.contains('active')) closeModal(projectModal);
+    }
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  } else {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -40px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  }
+})();
+</script>
+</body>
+</html>    "jobTitle": "Writer and Director",
     "description": "Johnny Olvera is a writer and director known as The Producer’s Director, combining performance experience, visual storytelling, and production discipline.",
     "worksFor": {
       "@type": "Organization",
